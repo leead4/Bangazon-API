@@ -15,9 +15,19 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
         model = Customer
         fields = ('firstname', 'lastname', 'status', 'date_created', 'date_last_active')
 
+
+class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
+    """Convert PaymentType model to JSON"""
+    class Meta:
+        """Global options for PaymentType class"""
+        model = PaymentType
+        fields = ('id', 'url', 'customer', 'account_number', 'payment_type_provider')
+
+
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
     """Convert ProductType model to JSON"""
     class Meta:
         """Global options for EmployeeTraining class"""
         model = ProductType
         fields = ('product_type', 'product_quantity')
+

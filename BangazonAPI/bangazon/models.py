@@ -31,6 +31,21 @@ class Customer(models.Model):
         """
         return "{} {}".format(self.firstname, self.lastname)
 
+
+class PaymentType(models.Model):
+    """
+    class defining Payment Type table in database
+    """
+    customer = models.ForeignKey(
+        Customer,
+        on_delete=models.CASCADE,
+        related_name="payment_types",
+        related_query_name="payment_types"
+    )
+    payment_type_provider = models.CharField(max_length=25)
+    account_number = models.CharField(max_length=25)
+    
+    
 class ProductType(models.Model):
     """
     class defining ProductType table in database
@@ -41,3 +56,4 @@ class ProductType(models.Model):
 
     def __str__(self):
         return "{}'s have {} amount of products".format(self.product_type, self.product_quantity)
+
