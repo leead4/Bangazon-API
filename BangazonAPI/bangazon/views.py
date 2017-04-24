@@ -10,7 +10,14 @@ class CustomerViewSet(viewsets.ModelViewSet):
     serializer_class = CustomerSerializer
 
 class ProductViewSet(viewsets.ModelViewSet):
-    """API endpoint that allows products to be viewed or edited."""
+    """
+    API endpoint that allows Customers to be viewed or edited.
+    Author: Jessica Younker
+    """
+    queryset = Customer.objects.all()
+    serializer_class = CustomerSerializer
 
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
+class ProductTypeViewSet(viewsets.ModelViewSet):
+    """API endpoint that allows customers to be viewed or edited."""
+    queryset = ProductType.objects.all()
+    serializer_class  = ProductTypeSerializer
