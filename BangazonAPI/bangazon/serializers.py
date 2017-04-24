@@ -1,4 +1,4 @@
-from BangazonAPI.bangazon.models import Customer
+from BangazonAPI.bangazon.models import *
 from rest_framework import serializers
 
 class CustomerSerializer(serializers.HyperlinkedModelSerializer):
@@ -7,4 +7,11 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
         """Global options for Customer class"""
         model = Customer
         fields = ('firstname', 'lastname', 'status', 'date_created', 'date_last_active')
+
+class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
+    """Convert PaymentType model to JSON"""
+    class Meta:
+        """Global options for Customer class"""
+        model = PaymentType
+        fields = ('id', 'url', 'customer', 'account_number', 'payment_type_provider')
 

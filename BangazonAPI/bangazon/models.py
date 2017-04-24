@@ -25,3 +25,17 @@ class Customer(models.Model):
 
     def __str__(self):
         return "{} {}".format(self.firstname, self.lastname)
+
+class PaymentType(models.Model):
+    """
+    class defining Payment Type table in database
+    """
+    customer = models.ForeignKey(
+        Customer,
+        on_delete=models.CASCADE,
+        related_name="payment_types",
+        related_query_name="payment_types"
+    )
+    payment_type_provider = models.CharField(max_length=25)
+    account_number = models.CharField(max_length=25)
+    
