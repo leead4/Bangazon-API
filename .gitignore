@@ -1,8 +1,9 @@
 node_modules
 bower_components
-BangazonAPI/pycache
+BangazonAPI/__pycache__
 *.pyc
 bin
 obj
 *.db
 *.sqlite3
+BangazonAPI/bangazon/__pycache__

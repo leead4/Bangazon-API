@@ -12,7 +12,7 @@ class Customer(models.Model):
     date_last_active = models.DateField(auto_now_add=True)
     status = models.CharField(max_length=10)
 
-        
+
     def customer_status(self):
         """
         method determining if status is active or inactive (no login within 240 days)
@@ -23,10 +23,21 @@ class Customer(models.Model):
             self.status = "active"
         else: self.status = "inactive"
 
-        
+
     def __str__(self):
         """
         convert Customer object to readable string
         Author: Jessica Younker
         """
         return "{} {}".format(self.firstname, self.lastname)
+
+class ProductType(models.Model):
+    """
+    class defining ProductType table in database
+    Author: Justin Short
+    """
+    product_type = models.CharField(max_length=45)
+    product_quantity = models.IntegerField(default=0) # This will be used to show amount of products in each type
+
+    def __str__(self):
+        return "{}'s have {} amount of products".format(self.product_type, self.product_quantity)
