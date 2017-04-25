@@ -1,6 +1,18 @@
 from django.db import models
 
 
+class ProductType(models.Model):
+    """
+    class defining ProductType table in database
+    Author: Justin Short
+    """
+    product_type = models.CharField(max_length=45)
+    product_quantity = models.IntegerField(default=0) # This will be used to show amount of products in each type
+
+    def __str__(self):
+        return "{}'s have {} amount of products".format(self.product_type, self.product_quantity)
+
+
 class Customer(models.Model):
     """
     class defining Customer table in database
@@ -46,7 +58,7 @@ class Product(models.Model):
     product_price = models.IntegerField()
     product_description = models.CharField(max_length=25)
     customer_id = models.ForeignKey(Customer)
-    product_type_id = models.ForeignKey(Product_Type)
+    product_type_id = models.ForeignKey(ProductType)
 
     def __str__(self):
         """Return a string listing product fields.
@@ -68,15 +80,3 @@ class PaymentType(models.Model):
     )
     payment_type_provider = models.CharField(max_length=25)
     account_number = models.CharField(max_length=25)
-    
-class ProductType(models.Model):
-    """
-    class defining ProductType table in database
-    Author: Justin Short
-    """
-    product_type = models.CharField(max_length=45)
-    product_quantity = models.IntegerField(default=0) # This will be used to show amount of products in each type
-
-    def __str__(self):
-        return "{}'s have {} amount of products".format(self.product_type, self.product_quantity)
-
