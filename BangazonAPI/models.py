@@ -59,7 +59,7 @@ class Product(models.Model):
     product_price = models.DecimalField(max_digits=6, decimal_places=2)
     product_description = models.CharField(max_length=100)
     customer_id = models.ForeignKey(Customer)
-    product_type_id = models.ForeignKey(Product_Type)
+    product_type_id = models.ForeignKey(ProductType)
 
     def __str__(self):
         """Return a string listing product fields.
@@ -82,10 +82,11 @@ class PaymentType(models.Model):
     account_number = models.CharField(max_length=25)
 
 class Order(models.Model):
-'''
-class defining Order table in database auth:Angela 
-'''
-    status_active = models.CharField(auto_now_add=False)
+    '''
+    class defining Order table in database auth:Angela 
+    '''
+
+    order_status = models.CharField(max_length = 25)
     payment_types_id = models.ForeignKey(PaymentType)
     purchase_customer_id = models.ForeignKey(Customer)
 
