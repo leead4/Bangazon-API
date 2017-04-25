@@ -33,6 +33,13 @@ class PaymentTypeViewSet(viewsets.ModelViewSet):
     queryset = PaymentType.objects.all().order_by("payment_type_provider")
     serializer_class = PaymentTypeSerializer
 
-    
+class OrderViewSet(viewsets.ModelViewSet):
+    """ API endpoint that allows order date to be viewed or edited. auth: Angela """ 
+    queryset = Order.objects.all()
+    serializer_class = OrderSerializer
 
+class OrderProductViewSet(viewsets.ModelViewSet):
+    """ API endpoint that allows customers to be viewed or edited auth: Angela  """ 
+    queryset = OrderProduct.objects.all()
+    serializer_class = OrderProductSerializer
 

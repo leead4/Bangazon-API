@@ -41,3 +41,16 @@ class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
         model = ProductType
         fields = ('product_type', 'product_quantity')
 
+class OrderSerializer(serializers.HyperlinkedModelSerializer):
+    ''' Convert Order Model to JSON '''
+    class Meta:
+        """Global Options for Order Class auth:Angela """ 
+        model = Order
+        fields = ('order_status', 'payment_types_id', 'purchase_customer_id')
+
+class OrderProductSerializer(serializers.HyperlinkedModelSerializer):
+    """ Convert Order-Product model to JSON auth:Angela  """
+    class Meta: 
+        """ Global options for OrderProduct class """
+        model = OrderProduct
+        fields = ('product', 'order')
