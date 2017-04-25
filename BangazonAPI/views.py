@@ -1,7 +1,12 @@
-from BangazonAPI.bangazon.models import *
+from bangazonapi.models import *
 from rest_framework import viewsets
-from BangazonAPI.bangazon.serializers import *
+from bangazonapi.serializers import *
 
+
+class ProductTypeViewSet(viewsets.ModelViewSet):
+    """API endpoint that allows customers to be viewed or edited."""
+    queryset = ProductType.objects.all()
+    serializer_class  = ProductTypeSerializer
 
 class CustomerViewSet(viewsets.ModelViewSet):
     """API endpoint that allows customers to be viewed or edited."""
@@ -14,8 +19,8 @@ class ProductViewSet(viewsets.ModelViewSet):
     API endpoint that allows Customers to be viewed or edited.
     Author: Jessica Younker
     """
-    queryset = Customer.objects.all()
-    serializer_class = CustomerSerializer
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
 
 
 class PaymentTypeViewSet(viewsets.ModelViewSet):
@@ -26,8 +31,5 @@ class PaymentTypeViewSet(viewsets.ModelViewSet):
     serializer_class = PaymentTypeSerializer
 
     
-class ProductTypeViewSet(viewsets.ModelViewSet):
-    """API endpoint that allows customers to be viewed or edited."""
-    queryset = ProductType.objects.all()
-    serializer_class  = ProductTypeSerializer
+
 

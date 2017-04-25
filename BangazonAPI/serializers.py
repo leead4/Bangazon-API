@@ -1,4 +1,4 @@
-from BangazonAPI.bangazon.models import *
+from bangazonapi.models import *
 from rest_framework import serializers
 
 class CustomerSerializer(serializers.HyperlinkedModelSerializer):
