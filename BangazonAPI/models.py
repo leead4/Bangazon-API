@@ -1,16 +1,5 @@
 from django.db import models
 
-class ProductType(models.Model):
-    """
-    class defining ProductType table in database
-    Author: Justin Short
-    """
-    product_type = models.CharField(max_length=45)
-    product_quantity = models.IntegerField(default=0) # This will be used to show amount of products in each type
-
-    def __str__(self):
-        return "{}'s have {} amount of products".format(self.product_type, self.product_quantity)
-        
 
 class ProductType(models.Model):
     """
