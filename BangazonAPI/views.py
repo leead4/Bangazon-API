@@ -1,6 +1,9 @@
-from bangazonapi.models import *
+from BangazonAPI.models import *
 from rest_framework import viewsets
-from bangazonapi.serializers import *
+from BangazonAPI.serializers import *
+from BangazonAPI.models import *
+
+
 
 
 class ProductTypeViewSet(viewsets.ModelViewSet):

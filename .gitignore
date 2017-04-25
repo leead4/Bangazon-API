@@ -3,6 +3,7 @@ bower_components
 */__pycache__/
 *.pyc
 bin
+*.DS_Store
 obj
 *.db
 *.sqlite3

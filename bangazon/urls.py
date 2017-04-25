@@ -1,6 +1,6 @@
 from django.conf.urls import url, include
 from rest_framework import routers
-from bangazonapi import views
+from BangazonAPI import views
 from django.contrib import admin
 
 router = routers.DefaultRouter()
