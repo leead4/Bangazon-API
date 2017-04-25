@@ -56,10 +56,10 @@ class Product(models.Model):
     """
 
     product_title = models.CharField(max_length=25)
-    product_price = models.IntegerField()
-    product_description = models.CharField(max_length=25)
+    product_price = models.DecimalField(max_digits=6, decimal_places=2)
+    product_description = models.CharField(max_length=100)
     customer_id = models.ForeignKey(Customer)
-    product_type_id = models.ForeignKey(ProductType)
+    product_type_id = models.ForeignKey(Product_Type)
 
     def __str__(self):
         """Return a string listing product fields.
@@ -80,3 +80,16 @@ class PaymentType(models.Model):
     )
     payment_type_provider = models.CharField(max_length=25)
     account_number = models.CharField(max_length=25)
+
+class Order(models.Model):
+'''
+class defining Order table in database auth:Angela 
+'''
+    status_active = models.CharField(auto_now_add=False)
+    payment_types_id = models.ForeignKey(PaymentType)
+    purchase_customer_id = models.ForeignKey(Customer)
+
+class OrderProduct(models.Model):
+    """ class defining Order Product relational data in Database """ 
+    order = models.ForeignKey(Order)
+    product = models.ForeignKey(Product)
