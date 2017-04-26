@@ -31,7 +31,6 @@ class Customer(models.Model):
     Last_name: string, the last name of the customer
     Date_created: datetime, the date the customer's account was created
     Date_last_active: datetime, the date the customer last accessed their account
-    Status: string, whether the customer is active or not
     """
     first_name = models.CharField(max_length=25)
     last_name = models.CharField(max_length=25)
