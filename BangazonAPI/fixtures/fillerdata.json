@@ -102,9 +102,9 @@
   {
     "model": "BangazonAPI.product",
     "fields": {
-      "product_title": "armchair",
-      "product_price": 100,
-      "product_description": "Comfy lazyboy",
+      "title": "armchair",
+      "price": 100,
+      "description": "Comfy lazyboy",
       "customer_id": 2,
       "product_type_id": 4
     }
@@ -112,9 +112,9 @@
   {
     "model": "BangazonAPI.product",
     "fields": {
-      "product_title": "loveseat",
-      "product_price": 200,
-      "product_description": "Comfy ethanallen",
+      "title": "loveseat",
+      "price": 200,
+      "description": "Comfy ethanallen",
       "customer_id": 6,
       "product_type_id": 8
     }
@@ -122,9 +122,9 @@
   {
     "model": "BangazonAPI.product",
     "fields": {
-      "product_title": "couch",
-      "product_price": 300,
-      "product_description": "Comfy serta",
+      "title": "couch",
+      "price": 300,
+      "description": "Comfy serta",
       "customer_id": 10,
       "product_type_id": 1
     }
@@ -132,9 +132,9 @@
   {
     "model": "BangazonAPI.product",
     "fields": {
-      "product_title": "director's chair",
-      "product_price": 50,
-      "product_description": "signed by hitchcock",
+      "title": "director's chair",
+      "price": 50,
+      "description": "signed by hitchcock",
       "customer_id": 3,
       "product_type_id": 5
     }
@@ -142,9 +142,9 @@
   {
     "model": "BangazonAPI.product",
     "fields": {
-      "product_title": "stool",
-      "product_price": 100,
-      "product_description": "metal",
+      "title": "stool",
+      "price": 100,
+      "description": "metal",
       "customer_id": 7,
       "product_type_id": 9
     }
@@ -152,9 +152,9 @@
   {
     "model": "BangazonAPI.product",
     "fields": {
-      "product_title": "fake plant",
-      "product_price": 80,
-      "product_description": "purifies air",
+      "title": "fake plant",
+      "price": 80,
+      "description": "purifies air",
       "customer_id": 9,
       "product_type_id": 6
     }
@@ -162,9 +162,9 @@
   {
     "model": "BangazonAPI.product",
     "fields": {
-      "product_title": "rug",
-      "product_price": 110,
-      "product_description": "ties room together",
+      "title": "rug",
+      "price": 110,
+      "description": "ties room together",
       "customer_id": 4,
       "product_type_id": 3
     }
@@ -172,9 +172,9 @@
   {
     "model": "BangazonAPI.product",
     "fields": {
-      "product_title": "armchair",
-      "product_price": 200,
-      "product_description": "tasteful upholstry",
+      "title": "armchair",
+      "price": 200,
+      "description": "tasteful upholstry",
       "customer_id": 2,
       "product_type_id": 1
     }
@@ -182,9 +182,9 @@
   {
     "model": "BangazonAPI.product",
     "fields": {
-      "product_title": "armchair",
-      "product_price": 1000,
-      "product_description": "reclines",
+      "title": "armchair",
+      "price": 1000,
+      "description": "reclines",
       "customer_id": 1,
       "product_type_id": 1
     }
@@ -192,9 +192,9 @@
   {
     "model": "BangazonAPI.product",
     "fields": {
-      "product_title": "desk",
-      "product_price": 900,
-      "product_description": "wood",
+      "title": "desk",
+      "price": 900,
+      "description": "wood",
       "customer_id": 3,
       "product_type_id": 7
     }
@@ -493,8 +493,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product": 3,
-      "order": 1
+      "product_id": 3,
+      "order_id": 1
 
     }
 
@@ -503,8 +503,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product": 2,
-      "order": 2
+      "product_id": 2,
+      "order_id": 2
 
     }
 
@@ -513,8 +513,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product": 4,
-      "order": 3
+      "product_id": 4,
+      "order_id": 3
 
     }
 
@@ -523,8 +523,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product": 5,
-      "order": 4
+      "product_id": 5,
+      "order_id": 4
 
     }
 
@@ -533,8 +533,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product": 5,
-      "order": 5
+      "product_id": 5,
+      "order_id": 5
 
     }
 
@@ -544,8 +544,8 @@
     "model": "BangazonAPI.orderproduct",
     "pk": 6,
     "fields": {
-      "product": 6,
-      "order": 6
+      "product_id": 6,
+      "order_id": 6
 
     }
 
@@ -554,8 +554,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product": 7,
-      "order": 7
+      "product_id": 7,
+      "order_id": 7
 
   }
 
@@ -564,8 +564,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product": 8,
-      "order": 7
+      "product_id": 8,
+      "order_id": 7
 
     }
 
@@ -574,8 +574,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product": 9,
-      "order": 9
+      "product_id": 9,
+      "order_id": 9
 
     }
 
@@ -584,8 +584,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product": 10,
-      "order": 10
+      "product_id": 10,
+      "order_id": 10
 
     }
 
