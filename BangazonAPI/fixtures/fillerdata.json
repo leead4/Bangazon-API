@@ -1,0 +1,433 @@
+[
+  {
+    "model": "BangazonAPI.customer",
+    "pk": 1,
+    "fields": {
+      "firstname": "John",
+      "lastname": "Lennon",
+      "status": "active",
+      "date_created": "2017-04-25",
+      "date_last_active": "2017-04-25"
+    }
+  },
+  {
+    "model": "BangazonAPI.customer",
+    "pk": 2,
+    "fields": {
+      "firstname": "George",
+      "lastname": "Longshanks",
+      "status": "active",
+      "date_created": "2017-04-25",
+      "date_last_active": "2017-04-25"
+    }
+  },
+  {
+    "model": "BangazonAPI.customer",
+    "pk": 3,
+    "fields": {
+      "firstname": "Marvin",
+      "lastname": "Suspenderman",
+      "status": "active",
+      "date_created": "2017-04-25",
+      "date_last_active": "2017-04-25"
+    }
+  },
+  {
+    "model": "BangazonAPI.customer",
+    "pk": 4,
+    "fields": {
+      "firstname": "Lawanda",
+      "lastname": "Marvelty",
+      "status": "active",
+      "date_created": "2017-04-25",
+      "date_last_active": "2017-04-25"
+    }
+  },
+  {
+    "model": "BangazonAPI.customer",
+    "pk": 5,
+    "fields": {
+      "firstname": "Crindy",
+      "lastname": "Lamlam",
+      "status": "active",
+      "date_created": "2017-04-25",
+      "date_last_active": "2017-04-25"
+    }
+  },
+  {
+    "model": "BangazonAPI.customer",
+    "pk": 6,
+    "fields": {
+      "firstname": "Sally",
+      "lastname": "Struthers",
+      "status": "active",
+      "date_created": "2017-04-25",
+      "date_last_active": "2017-04-25"
+    }
+  },
+  {
+    "model": "BangazonAPI.customer",
+    "pk": 7,
+    "fields": {
+      "firstname": "Maury",
+      "lastname": "Poboy",
+      "status": "active",
+      "date_created": "2017-04-25",
+      "date_last_active": "2017-04-25"
+    }
+  },
+  {
+    "model": "BangazonAPI.customer",
+    "pk": 8,
+    "fields": {
+      "firstname": "Stimpy",
+      "lastname": "Henderson",
+      "status": "active",
+      "date_created": "2017-04-25",
+      "date_last_active": "2017-04-25"
+    }
+  },
+  {
+    "model": "BangazonAPI.customer",
+    "pk": 9,
+    "fields": {
+      "firstname": "Farval",
+      "lastname": "Michaelson",
+      "status": "active",
+      "date_created": "2017-04-25",
+      "date_last_active": "2017-04-25"
+    }
+  },
+  {
+    "model": "BangazonAPI.customer",
+    "pk": 10,
+    "fields": {
+      "firstname": "Randy",
+      "lastname": "Horsemaker",
+      "status": "active",
+      "date_created": "2017-04-25",
+      "date_last_active": "2017-04-25"
+    }
+  },
+  {
+    "model": "BangazonAPI.product",
+    "pk": 1,
+    "fields": {
+      "product_title": "armchair",
+      "product_price": 100,
+      "product_description": "Comfy lazyboy",
+      "customer_id": 2,
+      "product_type_id": 4
+    }
+  },
+  {
+    "model": "BangazonAPI.product",
+    "pk": 2,
+    "fields": {
+      "product_title": "loveseat",
+      "product_price": 200,
+      "product_description": "Comfy ethanallen",
+      "customer_id": 6,
+      "product_type_id": 8
+    }
+  },
+  {
+    "model": "BangazonAPI.product",
+    "pk": 3,
+    "fields": {
+      "product_title": "couch",
+      "product_price": 300,
+      "product_description": "Comfy serta",
+      "customer_id": 10,
+      "product_type_id": 1
+    }
+  },
+  {
+    "model": "BangazonAPI.product",
+    "pk": 4,
+    "fields": {
+      "product_title": "director's chair",
+      "product_price": 50,
+      "product_description": "signed by hitchcock",
+      "customer_id": 3,
+      "product_type_id": 5
+    }
+  },
+  {
+    "model": "BangazonAPI.product",
+    "pk": 5,
+    "fields": {
+      "product_title": "stool",
+      "product_price": 100,
+      "product_description": "metal",
+      "customer_id": 7,
+      "product_type_id": 9
+    }
+  },
+  {
+    "model": "BangazonAPI.product",
+    "pk": 6,
+    "fields": {
+      "product_title": "fake plant",
+      "product_price": 80,
+      "product_description": "purifies air",
+      "customer_id": 9,
+      "product_type_id": 6
+    }
+  },
+  {
+    "model": "BangazonAPI.product",
+    "pk": 7,
+    "fields": {
+      "product_title": "rug",
+      "product_price": 110,
+      "product_description": "ties room together",
+      "customer_id": 4,
+      "product_type_id": 3
+    }
+  },
+  {
+    "model": "BangazonAPI.product",
+    "pk": 8,
+    "fields": {
+      "product_title": "armchair",
+      "product_price": 200,
+      "product_description": "tasteful upholstry",
+      "customer_id": 2,
+      "product_type_id": 1
+    }
+  },
+  {
+    "model": "BangazonAPI.product",
+    "pk": 9,
+    "fields": {
+      "product_title": "armchair",
+      "product_price": 1000,
+      "product_description": "reclines",
+      "customer_id": 1,
+      "product_type_id": 1
+    }
+  },
+  {
+    "model": "BangazonAPI.product",
+    "pk": 10,
+    "fields": {
+      "product_title": "desk",
+      "product_price": 900,
+      "product_description": "wood",
+      "customer_id": 3,
+      "product_type_id": 7
+    }
+  },
+  {
+    "model": "BangazonAPI.producttype",
+    "pk": 1,
+    "fields": {
+      "product_type": "furniture",
+      "product_quantity": 900
+      
+    }
+
+  },
+  {
+    "model": "BangazonAPI.producttype",
+    "pk": 2,
+    "fields": {
+      "product_type": "housething",
+      "product_quantity": 800
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.producttype",
+    "pk": 3,
+    "fields": {
+      "product_type": "housething",
+      "product_quantity": 700
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.producttype",
+    "pk": 4,
+    "fields": {
+      "product_type": "comfortobject",
+      "product_quantity": 600
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.producttype",
+    "pk": 5,
+    "fields": {
+      "product_type": "decoration",
+      "product_quantity": 500
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.producttype",
+    "pk": 6,
+    "fields": {
+      "product_type": "totem",
+      "product_quantity": 400
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.producttype",
+    "pk": 7,
+    "fields": {
+      "product_type": "floorthing",
+      "product_quantity": 300
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.producttype",
+    "pk": 8,
+    "fields": {
+      "product_type": "spacetaker",
+      "product_quantity": 200
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.producttype",
+    "pk": 9,
+    "fields": {
+      "product_type": "something",
+      "product_quantity": 100
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.producttype",
+    "pk": 10,
+    "fields": {
+      "product_type": "somethingelse",
+      "product_quantity": 900
+      
+    }
+    
+  },
+    {
+    "model": "BangazonAPI.paymenttype",
+    "pk": 1,
+    "fields": {
+      "customer": 1,
+      "payment_type_provider": "Amex",
+      "account_number": 1346
+      
+    }
+    
+  },
+    {
+    "model": "BangazonAPI.paymenttype",
+    "pk": 2,
+    "fields": {
+      "customer": 2,
+      "payment_type_provider": "Discover",
+      "account_number": 134565
+      
+    }
+    
+  },
+    {
+    "model": "BangazonAPI.paymenttype",
+    "pk": 3,
+    "fields": {
+      "customer": 3,
+      "payment_type_provider": "Mastercard",
+      "account_number": 134567
+      
+    }
+    
+  },
+    {
+    "model": "BangazonAPI.paymenttype",
+    "pk": 4,
+    "fields": {
+      "customer": 4,
+      "payment_type_provider": "Visa",
+      "account_number": 134569
+      
+    }
+    
+  },
+    {
+    "model": "BangazonAPI.paymenttype",
+    "pk": 5,
+    "fields": {
+      "customer": 5,
+      "payment_type_provider": "money order",
+      "account_number": 1345600
+      
+    }
+    
+  },
+    {
+    "model": "BangazonAPI.paymenttype",
+    "pk": 6,
+    "fields": {
+      "customer": 6,
+      "payment_type_provider": "check",
+      "account_number": 1345699
+      
+    }
+    
+  },
+    {
+    "model": "BangazonAPI.paymenttype",
+    "pk": 7,
+    "fields": {
+      "customer": 7,
+      "payment_type_provider": "gift certificate",
+      "account_number": 134561
+      
+    }
+    
+  },
+    {
+    "model": "BangazonAPI.paymenttype",
+    "pk": 8,
+    "fields": {
+      "customer": 8,
+      "payment_type_provider": "Other",
+      "account_number": 13456323
+      
+    }
+    
+  },
+    {
+    "model": "BangazonAPI.paymenttype",
+    "pk": 9,
+    "fields": {
+      "customer": 9,
+      "payment_type_provider": "WunderMunny",
+      "account_number": 13456787
+      
+    }
+    
+  },
+    {
+    "model": "BangazonAPI.paymenttype",
+    "pk": 10,
+    "fields": {
+      "customer": 10,
+      "payment_type_provider": "Free",
+      "account_number": 134569900
+      
+    }
+    
+  }
+
+]
