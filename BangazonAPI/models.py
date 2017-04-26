@@ -5,11 +5,11 @@ class ProductType(models.Model):
     """
     This class defines a ProductType in a table of producttypes.
     Author: Justin Short
-    
+
     The response will be a producttype details response object.
 
     Keyword Methods:
-    Product_type: string, the name of the prodcut type
+    Product_type: string, the name of the product type
     Product_quantity: integer, how many of a product exists
     """
     product_type = models.CharField(max_length=45)
@@ -27,7 +27,7 @@ class Customer(models.Model):
     """
     This class defines a Customer in a table of customers.
     Author: Jessica Younker
-    
+
     The response will be a product details response object.
 
     Keyword Methods:
@@ -57,7 +57,7 @@ class Customer(models.Model):
         days_inactive = self.date_last_active - self.date_created
         if days_inactive.days <= 239:
             self.status = self.ACTIVE
-        else: 
+        else:
             self.status = self.INACTIVE
 
     def __str__(self):
@@ -83,9 +83,9 @@ class Product(models.Model):
     Product_type_id: foreign key identifier for product types in products
     """
 
-    product_title = models.CharField(max_length=25)
-    product_price = models.DecimalField(max_digits=6, decimal_places=2)
-    product_description = models.CharField(max_length=100)
+    title = models.CharField(max_length=25)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    description = models.CharField(max_length=100)
     customer_id = models.ForeignKey(Customer)
     product_type_id = models.ForeignKey(ProductType)
 
@@ -121,7 +121,7 @@ class Order(models.Model):
     """
     This class defines a Order in a table of orders.
     Author: Angela Lee
-    
+
     The response will be a order details response object.
 
     Keyword Methods:
@@ -138,15 +138,18 @@ class OrderProduct(models.Model):
     """
     This class defines a relationship between Orders and Products in a table of orderproducts.
     Author: Angela Lee
-    
+
     The response will be a orderproduct relationship details response object.
 
     Keyword Methods:
     Order_id: foreign key identifier for order in orderproduct
     Product_id: foreign key identifier for Product in orderproduct
-    """ 
+
+    """
     order_id = models.ForeignKey(Order)
     product_id = models.ForeignKey(Product)
+
+
 
 
 
