@@ -145,8 +145,8 @@ class OrderProduct(models.Model):
     Order_id: foreign key identifier for order in orderproduct
     Product_id: foreign key identifier for Product in orderproduct
     """ 
-    order = models.ForeignKey(Order)
-    product = models.ForeignKey(Product)
+    order_id = models.ForeignKey(Order)
+    product_id = models.ForeignKey(Product)
 
 
 

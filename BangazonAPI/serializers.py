@@ -68,4 +68,4 @@ class OrderProductSerializer(serializers.HyperlinkedModelSerializer):
     class Meta: 
         """ Global options for OrderProduct class """
         model = OrderProduct
-        fields = ('product', 'order')
+        fields = ('product_id', 'order_id')
