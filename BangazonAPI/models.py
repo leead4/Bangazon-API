@@ -22,8 +22,8 @@ class Customer(models.Model):
     class defining Customer table in database
     Author: Jessica Younker
     """
-    firstname = models.CharField(max_length=25)
-    lastname = models.CharField(max_length=25)
+    first_name = models.CharField(max_length=25)
+    last_name = models.CharField(max_length=25)
     date_created = models.DateField(auto_now_add=True)
     date_last_active = models.DateField(auto_now_add=True)
     ACTIVE = "ACTIVE"
@@ -51,7 +51,7 @@ class Customer(models.Model):
         convert Customer object to readable string
         Author: Jessica Younker
         """
-        return "{} {}".format(self.firstname, self.lastname)
+        return "{} {}".format(self.first_name, self.last_name)
 
 
 class Product(models.Model):
