@@ -3,9 +3,9 @@
     "model": "BangazonAPI.customer",
     "pk": 1,
     "fields": {
-      "firstname": "John",
-      "lastname": "Lennon",
-      "status": "active",
+      "first_name": "John",
+      "last_name": "Lennon",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -14,9 +14,9 @@
     "model": "BangazonAPI.customer",
     "pk": 2,
     "fields": {
-      "firstname": "George",
-      "lastname": "Longshanks",
-      "status": "active",
+      "first_name": "George",
+      "last_name": "Longshanks",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -25,9 +25,9 @@
     "model": "BangazonAPI.customer",
     "pk": 3,
     "fields": {
-      "firstname": "Marvin",
-      "lastname": "Suspenderman",
-      "status": "active",
+      "first_name": "Marvin",
+      "last_name": "Suspenderman",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -36,9 +36,9 @@
     "model": "BangazonAPI.customer",
     "pk": 4,
     "fields": {
-      "firstname": "Lawanda",
-      "lastname": "Marvelty",
-      "status": "active",
+      "first_name": "Lawanda",
+      "last_name": "Marvelty",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -47,9 +47,9 @@
     "model": "BangazonAPI.customer",
     "pk": 5,
     "fields": {
-      "firstname": "Crindy",
-      "lastname": "Lamlam",
-      "status": "active",
+      "first_name": "Crindy",
+      "last_name": "Lamlam",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -58,9 +58,9 @@
     "model": "BangazonAPI.customer",
     "pk": 6,
     "fields": {
-      "firstname": "Sally",
-      "lastname": "Struthers",
-      "status": "active",
+      "first_name": "Sally",
+      "last_name": "Struthers",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -69,9 +69,9 @@
     "model": "BangazonAPI.customer",
     "pk": 7,
     "fields": {
-      "firstname": "Maury",
-      "lastname": "Poboy",
-      "status": "active",
+      "first_name": "Maury",
+      "last_name": "Poboy",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -80,9 +80,9 @@
     "model": "BangazonAPI.customer",
     "pk": 8,
     "fields": {
-      "firstname": "Stimpy",
-      "lastname": "Henderson",
-      "status": "active",
+      "first_name": "Stimpy",
+      "last_name": "Henderson",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -91,9 +91,9 @@
     "model": "BangazonAPI.customer",
     "pk": 9,
     "fields": {
-      "firstname": "Farval",
-      "lastname": "Michaelson",
-      "status": "active",
+      "first_name": "Farval",
+      "last_name": "Michaelson",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -102,9 +102,9 @@
     "model": "BangazonAPI.customer",
     "pk": 10,
     "fields": {
-      "firstname": "Randy",
-      "lastname": "Horsemaker",
-      "status": "active",
+      "first_name": "Randy",
+      "last_name": "Horsemaker",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }

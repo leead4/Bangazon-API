@@ -13,33 +13,45 @@ class ProductType(models.Model):
         return "{}'s have {} amount of products".format(self.product_type, self.product_quantity)
 
 
+def set_customer_status(customer):
+    customer.status = 'ACTIVE'
+
+
 class Customer(models.Model):
     """
     class defining Customer table in database
     Author: Jessica Younker
     """
-    firstname = models.CharField(max_length=25)
-    lastname = models.CharField(max_length=25)
+    first_name = models.CharField(max_length=25)
+    last_name = models.CharField(max_length=25)
     date_created = models.DateField(auto_now_add=True)
     date_last_active = models.DateField(auto_now_add=True)
-    status = models.CharField(max_length=10)
+    ACTIVE = "ACTIVE"
+    INACTIVE = "INACTIVE"
+
+    STATUS_OPTIONS_CHOICES = (
+        (ACTIVE, "Active"),
+        (INACTIVE, "Inactive")
+    )
+    status = models.CharField(max_length=8, choices=STATUS_OPTIONS_CHOICES, default=ACTIVE)
 
     def customer_status(self):
         """
         method determining if status is active or inactive (no login within 240 days)
         Author: Jessica Younker
         """
-        days_inactive = date_last_active - date_created
+        days_inactive = self.date_last_active - self.date_created
         if days_inactive.days <= 239:
-            self.status = "active"
-        else: self.status = "inactive"
+            self.status = self.ACTIVE
+        else: 
+            self.status = self.INACTIVE
 
     def __str__(self):
         """
         convert Customer object to readable string
         Author: Jessica Younker
         """
-        return "{} {}".format(self.firstname, self.lastname)
+        return "{} {}".format(self.first_name, self.last_name)
 
 
 class Product(models.Model):
