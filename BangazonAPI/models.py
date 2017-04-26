@@ -49,17 +49,6 @@ class Customer(models.Model):
     )
     status = models.CharField(max_length=8, choices=STATUS_OPTIONS_CHOICES, default=ACTIVE)
 
-    def customer_status(self):
-        """
-        method determining if status is active or inactive (no login within 240 days)
-        Author: Jessica Younker
-        """
-        days_inactive = self.date_last_active - self.date_created
-        if days_inactive.days <= 239:
-            self.status = self.ACTIVE
-        else:
-            self.status = self.INACTIVE
-
     def __str__(self):
         """
         convert Customer object to readable string
