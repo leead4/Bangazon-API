@@ -49,17 +49,6 @@ class Customer(models.Model):
     )
     status = models.CharField(max_length=8, choices=STATUS_OPTIONS_CHOICES, default=ACTIVE)
 
-    def customer_status(self):
-        """
-        method determining if status is active or inactive (no login within 240 days)
-        Author: Jessica Younker
-        """
-        days_inactive = self.date_last_active - self.date_created
-        if days_inactive.days <= 239:
-            self.status = self.ACTIVE
-        else:
-            self.status = self.INACTIVE
-
     def __str__(self):
         """
         convert Customer object to readable string
@@ -150,22 +139,18 @@ class OrderProduct(models.Model):
     product_id = models.ForeignKey(Product)
 
 
+class Department(models.model):
+    """
+    This class defines a department in a table of multiple Departments.
+    Author: Helana Nosrat
 
+    The response will be a department detail response object.
 
+    Keyword Methods:
+    department_name: a string providing a department name
+    expense_budget: a string providing a departments alotted expense budget in US dollars.
 
+    """
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    name = models.CharField(max_length=25)
+    expense_budget = models.DecimalField(max_digits=10, decimal_places=2)

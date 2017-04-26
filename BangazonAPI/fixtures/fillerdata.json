@@ -582,12 +582,59 @@
   },
 
   {
-    "model": "BangazonAPI.orderproduct",
+    "model": "BangazonAPI.department",
     "fields": {
-      "product_id": 10,
-      "order_id": 10
+      "name": "Clothing, Shoes, and Jewelry",
+      "expense_budget": 10000
 
     }
 
+},
+
+{
+    "model": "BangazonAPI.department",
+    "fields": {
+        "name": "Homegoods",
+        "expense_budget": 3000
+
   }
+
+},
+
+{
+    "model": "BangazonAPI.department",
+    "fields": {
+        "name": "Toys and Games",
+        "expense_budget": 15000
+
+  }
+},
+
+{
+    "model": "BangazonAPI.department",
+    "fields": {
+        "name": "Beauty and Personal Care",
+        "expense_budget": 2000
+
+  }
+},
+
+{
+    "model": "BangazonAPI.department",
+    "fields": {
+        "name": "Wine",
+        "expense_budget": 200000
+
+  }
+},
+
+{
+    "model": "BangazonAPI.department",
+    "fields": {
+        "name": "Electronics",
+        "expense_budget": 10000
+
+  }
+}
+
 ]
