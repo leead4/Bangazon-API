@@ -635,6 +635,42 @@
         "expense_budget": 10000
 
   }
+},
+
+{
+    "model": "BangazonAPI.department",
+    "fields": {
+        "name": "Appliances",
+        "expense_budget": 5000
+
+  }
+},
+
+{
+    "model": "BangazonAPI.department",
+    "fields": {
+        "name": "Books",
+        "expense_budget": 250
+
+  }
+},
+
+{
+    "model": "BangazonAPI.department",
+    "fields": {
+        "name": "Music",
+        "expense_budget": 800
+
+  }
+},
+
+{
+    "model": "BangazonAPI.department",
+    "fields": {
+        "name": "Pet Supplies",
+        "expense_budget": 9000
+
+  }
 }
 
 ]
