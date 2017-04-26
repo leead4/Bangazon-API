@@ -6,7 +6,7 @@ API exposes Consumer-side, and Company-side resources for Bangazon, LLC.
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
+- [Usage](#usage)   
 - [Contribute](#contribute)
 - [Credits](#credits)
 - [License](#license)
@@ -15,12 +15,16 @@ API exposes Consumer-side, and Company-side resources for Bangazon, LLC.
 1. ```git clone <repo address>``` into a local directory of your choosing.
 2. ```cd Bangazon-API/BangazonAPI/migrations```
 3. Delete all migration files EXCEPT __init__.py
-4. ```cd ../```
-5. ```python manage.py makemigrations```
-6. ```python manage.py migrate```
-7. ```python manage.py runserver```
+4. Delete contents of database (db.sqlite3)
+5. ```cd ../```
+6. ```python manage.py makemigrations```
+7. ```python manage.py migrate```
+8. ```python manaage.py createsuperuser```
+9. ```python manage.py runserver```
+10. login to api with superuser info
 
 ## Usage
+1. In fixtures directory, fillerdata.json file can be edited to test different data. From the web browser, data can also be added to each table from the API interface.
 
 
 ## Contribute
