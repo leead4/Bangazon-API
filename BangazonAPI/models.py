@@ -139,22 +139,18 @@ class OrderProduct(models.Model):
     product_id = models.ForeignKey(Product)
 
 
+class Department(models.model):
+    """
+    This class defines a department in a table of multiple Departments.
+    Author: Helana Nosrat
 
+    The response will be a department detail response object.
 
+    Keyword Methods:
+    department_name: a string providing a department name
+    expense_budget: a string providing a departments alotted expense budget in US dollars.
 
+    """
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    name = models.CharField(max_length=25)
+    expense_budget = models.DecimalField(max_digits=10, decimal_places=2)
