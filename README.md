@@ -1,20 +1,54 @@
-Bangazon API Milestone
+# BangazonAPI
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-# ${1:BangazonAPI}
-API exposes customer and order information for Bangazon LLC
+API exposes Consumer-side, and Company-side resources for Bangazon, LLC.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribute](#contribute)
+- [Credits](#credits)
+- [License](#license)
+
 ## Installation
-TODO: Describe the installation process
+1. ```git clone <repo address>``` into a local directory of your choosing.
+2. ```cd Bangazon-API/BangazonAPI/migrations```
+3. Delete all migration files EXCEPT __init__.py
+4. ```cd ../```
+5. ```python manage.py makemigrations```
+6. ```python manage.py migrate```
+7. ```python manage.py runserver```
+
 ## Usage
-TODO: Write usage instructions
-## Contributing
+
+
+## Contribute
 1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
+2. Create your feature branch: 
+```git checkout -b <new-feature-branch-name-here>```
+3. Commit your changes: 
+```git commit -m 'Add some feature'```
+4. Push to the branch: 
+```git push origin <new-feature-branch-name-here-too>```
 5. Submit a pull request :D
-## History
-TODO: Write history
+
+Small note: If editing the Readme, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+
 ## Credits
-TODO: Write credits
+Project Manager:
+  - Gilberto Diaz
+
+API Build Contributors:
+  - Jessica Younker
+  - Helana Nosrat
+  - Max Baldridge
+  - Angela Lee
+  - Justin Short
+
 ## License
-TODO: Write license
+[MIT © Trashy Armadillos](./LICENSE)
+
+
+
+
