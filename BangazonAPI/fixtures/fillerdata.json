@@ -1,7 +1,6 @@
 [
   {
     "model": "BangazonAPI.customer",
-    "pk": 1,
     "fields": {
       "first_name": "John",
       "last_name": "Lennon",
@@ -12,7 +11,6 @@
   },
   {
     "model": "BangazonAPI.customer",
-    "pk": 2,
     "fields": {
       "first_name": "George",
       "last_name": "Longshanks",
@@ -23,7 +21,6 @@
   },
   {
     "model": "BangazonAPI.customer",
-    "pk": 3,
     "fields": {
       "first_name": "Marvin",
       "last_name": "Suspenderman",
@@ -34,7 +31,6 @@
   },
   {
     "model": "BangazonAPI.customer",
-    "pk": 4,
     "fields": {
       "first_name": "Lawanda",
       "last_name": "Marvelty",
@@ -45,7 +41,6 @@
   },
   {
     "model": "BangazonAPI.customer",
-    "pk": 5,
     "fields": {
       "first_name": "Crindy",
       "last_name": "Lamlam",
@@ -56,7 +51,6 @@
   },
   {
     "model": "BangazonAPI.customer",
-    "pk": 6,
     "fields": {
       "first_name": "Sally",
       "last_name": "Struthers",
@@ -67,7 +61,6 @@
   },
   {
     "model": "BangazonAPI.customer",
-    "pk": 7,
     "fields": {
       "first_name": "Maury",
       "last_name": "Poboy",
@@ -78,7 +71,6 @@
   },
   {
     "model": "BangazonAPI.customer",
-    "pk": 8,
     "fields": {
       "first_name": "Stimpy",
       "last_name": "Henderson",
@@ -89,7 +81,6 @@
   },
   {
     "model": "BangazonAPI.customer",
-    "pk": 9,
     "fields": {
       "first_name": "Farval",
       "last_name": "Michaelson",
@@ -100,7 +91,6 @@
   },
   {
     "model": "BangazonAPI.customer",
-    "pk": 10,
     "fields": {
       "first_name": "Randy",
       "last_name": "Horsemaker",
@@ -111,7 +101,6 @@
   },
   {
     "model": "BangazonAPI.product",
-    "pk": 1,
     "fields": {
       "product_title": "armchair",
       "product_price": 100,
@@ -122,7 +111,6 @@
   },
   {
     "model": "BangazonAPI.product",
-    "pk": 2,
     "fields": {
       "product_title": "loveseat",
       "product_price": 200,
@@ -133,7 +121,6 @@
   },
   {
     "model": "BangazonAPI.product",
-    "pk": 3,
     "fields": {
       "product_title": "couch",
       "product_price": 300,
@@ -144,7 +131,6 @@
   },
   {
     "model": "BangazonAPI.product",
-    "pk": 4,
     "fields": {
       "product_title": "director's chair",
       "product_price": 50,
@@ -155,7 +141,6 @@
   },
   {
     "model": "BangazonAPI.product",
-    "pk": 5,
     "fields": {
       "product_title": "stool",
       "product_price": 100,
@@ -166,7 +151,6 @@
   },
   {
     "model": "BangazonAPI.product",
-    "pk": 6,
     "fields": {
       "product_title": "fake plant",
       "product_price": 80,
@@ -177,7 +161,6 @@
   },
   {
     "model": "BangazonAPI.product",
-    "pk": 7,
     "fields": {
       "product_title": "rug",
       "product_price": 110,
@@ -188,7 +171,6 @@
   },
   {
     "model": "BangazonAPI.product",
-    "pk": 8,
     "fields": {
       "product_title": "armchair",
       "product_price": 200,
@@ -199,7 +181,6 @@
   },
   {
     "model": "BangazonAPI.product",
-    "pk": 9,
     "fields": {
       "product_title": "armchair",
       "product_price": 1000,
@@ -210,7 +191,6 @@
   },
   {
     "model": "BangazonAPI.product",
-    "pk": 10,
     "fields": {
       "product_title": "desk",
       "product_price": 900,
@@ -221,7 +201,6 @@
   },
   {
     "model": "BangazonAPI.producttype",
-    "pk": 1,
     "fields": {
       "product_type": "furniture",
       "product_quantity": 900
@@ -231,7 +210,6 @@
   },
   {
     "model": "BangazonAPI.producttype",
-    "pk": 2,
     "fields": {
       "product_type": "housething",
       "product_quantity": 800
@@ -241,7 +219,6 @@
   },
   {
     "model": "BangazonAPI.producttype",
-    "pk": 3,
     "fields": {
       "product_type": "housething",
       "product_quantity": 700
@@ -251,7 +228,6 @@
   },
   {
     "model": "BangazonAPI.producttype",
-    "pk": 4,
     "fields": {
       "product_type": "comfortobject",
       "product_quantity": 600
@@ -261,7 +237,6 @@
   },
   {
     "model": "BangazonAPI.producttype",
-    "pk": 5,
     "fields": {
       "product_type": "decoration",
       "product_quantity": 500
@@ -271,7 +246,6 @@
   },
   {
     "model": "BangazonAPI.producttype",
-    "pk": 6,
     "fields": {
       "product_type": "totem",
       "product_quantity": 400
@@ -281,7 +255,6 @@
   },
   {
     "model": "BangazonAPI.producttype",
-    "pk": 7,
     "fields": {
       "product_type": "floorthing",
       "product_quantity": 300
@@ -291,7 +264,6 @@
   },
   {
     "model": "BangazonAPI.producttype",
-    "pk": 8,
     "fields": {
       "product_type": "spacetaker",
       "product_quantity": 200
@@ -301,7 +273,6 @@
   },
   {
     "model": "BangazonAPI.producttype",
-    "pk": 9,
     "fields": {
       "product_type": "something",
       "product_quantity": 100
@@ -311,7 +282,6 @@
   },
   {
     "model": "BangazonAPI.producttype",
-    "pk": 10,
     "fields": {
       "product_type": "somethingelse",
       "product_quantity": 900
@@ -321,7 +291,6 @@
   },
     {
     "model": "BangazonAPI.paymenttype",
-    "pk": 1,
     "fields": {
       "customer": 1,
       "payment_type_provider": "Amex",
@@ -332,7 +301,6 @@
   },
     {
     "model": "BangazonAPI.paymenttype",
-    "pk": 2,
     "fields": {
       "customer": 2,
       "payment_type_provider": "Discover",
@@ -343,7 +311,6 @@
   },
     {
     "model": "BangazonAPI.paymenttype",
-    "pk": 3,
     "fields": {
       "customer": 3,
       "payment_type_provider": "Mastercard",
@@ -354,7 +321,6 @@
   },
     {
     "model": "BangazonAPI.paymenttype",
-    "pk": 4,
     "fields": {
       "customer": 4,
       "payment_type_provider": "Visa",
@@ -365,7 +331,6 @@
   },
     {
     "model": "BangazonAPI.paymenttype",
-    "pk": 5,
     "fields": {
       "customer": 5,
       "payment_type_provider": "money order",
@@ -376,7 +341,6 @@
   },
     {
     "model": "BangazonAPI.paymenttype",
-    "pk": 6,
     "fields": {
       "customer": 6,
       "payment_type_provider": "check",
@@ -387,7 +351,6 @@
   },
     {
     "model": "BangazonAPI.paymenttype",
-    "pk": 7,
     "fields": {
       "customer": 7,
       "payment_type_provider": "gift certificate",
@@ -398,7 +361,6 @@
   },
     {
     "model": "BangazonAPI.paymenttype",
-    "pk": 8,
     "fields": {
       "customer": 8,
       "payment_type_provider": "Other",
@@ -409,7 +371,6 @@
   },
     {
     "model": "BangazonAPI.paymenttype",
-    "pk": 9,
     "fields": {
       "customer": 9,
       "payment_type_provider": "WunderMunny",
@@ -420,7 +381,6 @@
   },
     {
     "model": "BangazonAPI.paymenttype",
-    "pk": 10,
     "fields": {
       "customer": 10,
       "payment_type_provider": "Free",
@@ -428,6 +388,107 @@
       
     }
     
+  },
+  {
+    "model": "BangazonAPI.order",
+    "fields": {
+      "order_status": "active",
+      "payment_types_id": 1,
+      "purchase_customer_id": 5
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.order",
+    "fields": {
+      "order_status": "active",
+      "payment_types_id": 1,
+      "purchase_customer_id": 5
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.order",
+    "fields": {
+      "order_status": "inactive",
+      "payment_types_id": 1,
+      "purchase_customer_id": 5
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.order",
+    "fields": {
+      "order_status": "inactive",
+      "payment_types_id": 1,
+      "purchase_customer_id": 5
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.order",
+    "fields": {
+      "order_status": "active",
+      "payment_types_id": 1,
+      "purchase_customer_id": 5
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.order",
+    "fields": {
+      "order_status": "active",
+      "payment_types_id": 1,
+      "purchase_customer_id": 5
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.order",
+    "fields": {
+      "order_status": "inactive",
+      "payment_types_id": 1,
+      "purchase_customer_id": 5
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.order",
+    "fields": {
+      "order_status": "inactive",
+      "payment_types_id": 1,
+      "purchase_customer_id": 5
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.order",
+    "fields": {
+      "order_status": "active",
+      "payment_types_id": 1,
+      "purchase_customer_id": 5
+      
+    }
+    
+  },
+  {
+    "model": "BangazonAPI.order",
+    "fields": {
+      "order_status": "inactive",
+      "payment_types_id": 1,
+      "purchase_customer_id": 5
+      
+    }
+    
   }
+  
 
 ]
