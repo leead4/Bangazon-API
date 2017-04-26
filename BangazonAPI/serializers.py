@@ -16,7 +16,10 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('first_name', 'last_name', 'status', 'date_created','date_last_active')
 
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
-    """Convert Product model to formatted JSON string listing."""
+    """
+    Convert Product model to formatted JSON string listing.
+    Author: Helana Nosrat
+    """
 
     class Meta:
         """Global options for Product class."""
@@ -27,7 +30,10 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
-    """Convert PaymentType model to JSON"""
+    """
+    Convert PaymentType model to JSON
+    Author: Max Baldridge
+    """
     class Meta:
         """Global options for PaymentType class"""
         model = PaymentType
@@ -35,21 +41,30 @@ class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
-    """Convert ProductType model to JSON"""
+    """
+    Convert ProductType model to JSON
+    Author: Justin Short
+    """
     class Meta:
         """Global options for EmployeeTraining class"""
         model = ProductType
         fields = ('product_type', 'product_quantity')
 
 class OrderSerializer(serializers.HyperlinkedModelSerializer):
-    ''' Convert Order Model to JSON '''
+    """
+    Convert Order Model to JSON
+    Author: Angela Lee
+    """
     class Meta:
         """Global Options for Order Class auth:Angela """ 
         model = Order
         fields = ('order_status', 'payment_types_id', 'purchase_customer_id')
 
 class OrderProductSerializer(serializers.HyperlinkedModelSerializer):
-    """ Convert Order-Product model to JSON auth:Angela  """
+    """
+    Convert Order-Product model to JSON 
+    Author: Angela Lee
+    """
     class Meta: 
         """ Global options for OrderProduct class """
         model = OrderProduct
