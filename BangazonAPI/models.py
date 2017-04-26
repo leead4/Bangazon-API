@@ -144,6 +144,28 @@ class OrderProduct(models.Model):
     Keyword Methods:
     Order_id: foreign key identifier for order in orderproduct
     Product_id: foreign key identifier for Product in orderproduct
+
     """
     order_id = models.ForeignKey(Order)
     product_id = models.ForeignKey(Product)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
