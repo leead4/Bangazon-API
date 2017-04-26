@@ -5,7 +5,7 @@
     "fields": {
       "firstname": "John",
       "lastname": "Lennon",
-      "status": "active",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -16,7 +16,7 @@
     "fields": {
       "firstname": "George",
       "lastname": "Longshanks",
-      "status": "active",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -27,7 +27,7 @@
     "fields": {
       "firstname": "Marvin",
       "lastname": "Suspenderman",
-      "status": "active",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -38,7 +38,7 @@
     "fields": {
       "firstname": "Lawanda",
       "lastname": "Marvelty",
-      "status": "active",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -49,7 +49,7 @@
     "fields": {
       "firstname": "Crindy",
       "lastname": "Lamlam",
-      "status": "active",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -60,7 +60,7 @@
     "fields": {
       "firstname": "Sally",
       "lastname": "Struthers",
-      "status": "active",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -71,7 +71,7 @@
     "fields": {
       "firstname": "Maury",
       "lastname": "Poboy",
-      "status": "active",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -82,7 +82,7 @@
     "fields": {
       "firstname": "Stimpy",
       "lastname": "Henderson",
-      "status": "active",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -93,7 +93,7 @@
     "fields": {
       "firstname": "Farval",
       "lastname": "Michaelson",
-      "status": "active",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
@@ -104,7 +104,7 @@
     "fields": {
       "firstname": "Randy",
       "lastname": "Horsemaker",
-      "status": "active",
+      "status": "ACTIVE",
       "date_created": "2017-04-25",
       "date_last_active": "2017-04-25"
     }
