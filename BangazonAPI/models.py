@@ -3,8 +3,14 @@ from django.db import models
 
 class ProductType(models.Model):
     """
-    class defining ProductType table in database
+    This class defines a ProductType in a table of producttypes.
     Author: Justin Short
+    
+    The response will be a producttype details response object.
+
+    Keyword Methods:
+    Product_type: string, the name of the prodcut type
+    Product_quantity: integer, how many of a product exists
     """
     product_type = models.CharField(max_length=45)
     product_quantity = models.IntegerField(default=0) # This will be used to show amount of products in each type
@@ -15,11 +21,20 @@ class ProductType(models.Model):
 
 class Customer(models.Model):
     """
-    class defining Customer table in database
+    This class defines a Customer in a table of customers.
     Author: Jessica Younker
+    
+    The response will be a product details response object.
+
+    Keyword Methods:
+    First_name: string, the first name of the customer
+    Last_name: string, the last name of the customer
+    Date_created: datetime, the date the customer's account was created
+    Date_last_active: datetime, the date the customer last accessed their account
+    Status: string, whether the customer is active or not
     """
-    firstname = models.CharField(max_length=25)
-    lastname = models.CharField(max_length=25)
+    first_name = models.CharField(max_length=25)
+    last_name = models.CharField(max_length=25)
     date_created = models.DateField(auto_now_add=True)
     date_last_active = models.DateField(auto_now_add=True)
     status = models.CharField(max_length=10)
@@ -43,7 +58,9 @@ class Customer(models.Model):
 
 
 class Product(models.Model):
-    """This class defines a Product in a table of products.
+    """
+    This class defines a Product in a table of products.
+    Author: Helana Nosrat
 
     The response will be a product details response object.
 
@@ -62,15 +79,23 @@ class Product(models.Model):
     product_type_id = models.ForeignKey(ProductType)
 
     def __str__(self):
-        """Return a string listing product fields.
-
+        """
+        Return a string listing product fields.
         Interacts with admin interface.
         """
         return "{} {}".format(self.product_title, self.product_price, self.product_description)
 
 class PaymentType(models.Model):
     """
-    class defining Payment Type table in database
+    This class defines a Payment Type in a table of products.
+    Author: Max Baldridge
+
+    The response will be a payment type details response object.
+
+    Keyword Methods:
+    Payment_Type_Provider: string, Credit/Debit Card Company, or Bank/Check
+    Account_number: string, a string of numbers and/or letters
+    Customer_id: foreign key identifier for customers in products
     """
     customer = models.ForeignKey(
         Customer,
@@ -82,15 +107,51 @@ class PaymentType(models.Model):
     account_number = models.CharField(max_length=25)
 
 class Order(models.Model):
-    '''
-    class defining Order table in database auth:Angela 
-    '''
+    """
+    This class defines a Order in a table of orders.
+    Author: Angela Lee
+    
+    The response will be a order details response object.
+
+    Keyword Methods:
+    Order_Status: string, whether or not the order is active
+    Payment_types_id: foreign key identifier for payment types in orders
+    Purchase_customer_id: foreign key identifier for customers in orders
+    """
 
     order_status = models.CharField(max_length = 25)
     payment_types_id = models.ForeignKey(PaymentType)
     purchase_customer_id = models.ForeignKey(Customer)
 
 class OrderProduct(models.Model):
-    """ class defining Order Product relational data in Database """ 
+    """
+    This class defines a relationship between Orders and Products in a table of orderproducts.
+    Author: Angela Lee
+    
+    The response will be a orderproduct relationship details response object.
+
+    Keyword Methods:
+    Order_id: foreign key identifier for order in orderproduct
+    Product_id: foreign key identifier for Product in orderproduct
+    """ 
     order = models.ForeignKey(Order)
     product = models.ForeignKey(Product)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

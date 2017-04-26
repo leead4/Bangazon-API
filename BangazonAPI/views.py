@@ -7,12 +7,18 @@ from BangazonAPI.models import *
 
 
 class ProductTypeViewSet(viewsets.ModelViewSet):
-    """API endpoint that allows customers to be viewed or edited."""
+    """
+    API endpoint that allows customers to be viewed or edited.
+    Author: Justin Short
+    """
     queryset = ProductType.objects.all()
     serializer_class  = ProductTypeSerializer
 
 class CustomerViewSet(viewsets.ModelViewSet):
-    """API endpoint that allows customers to be viewed or edited."""
+    """
+    API endpoint that allows customers to be viewed or edited.
+    Author: Jessica Younker
+    """
 
     queryset = Customer.objects.all()
     serializer_class = CustomerSerializer
@@ -20,7 +26,7 @@ class CustomerViewSet(viewsets.ModelViewSet):
 class ProductViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Customers to be viewed or edited.
-    Author: Jessica Younker
+    Author: Helana Nosrat
     """
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
@@ -29,17 +35,24 @@ class ProductViewSet(viewsets.ModelViewSet):
 class PaymentTypeViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows PaymentTypes to be viewed or edited.
+    Author: Max Baldridge
     """
     queryset = PaymentType.objects.all().order_by("payment_type_provider")
     serializer_class = PaymentTypeSerializer
 
 class OrderViewSet(viewsets.ModelViewSet):
-    """ API endpoint that allows order date to be viewed or edited. auth: Angela """ 
+    """ 
+    API endpoint that allows order date to be viewed or edited.
+    Author: Angela Less
+    """ 
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
 
 class OrderProductViewSet(viewsets.ModelViewSet):
-    """ API endpoint that allows customers to be viewed or edited auth: Angela  """ 
+    """
+    API endpoint that allows customers to be viewed or edited 
+    Author: Angela Lee
+    """ 
     queryset = OrderProduct.objects.all()
     serializer_class = OrderProductSerializer
 
