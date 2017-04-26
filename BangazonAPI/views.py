@@ -41,10 +41,10 @@ class PaymentTypeViewSet(viewsets.ModelViewSet):
     serializer_class = PaymentTypeSerializer
 
 class OrderViewSet(viewsets.ModelViewSet):
-    """ 
+    """
     API endpoint that allows order date to be viewed or edited.
     Author: Angela Less
-    """ 
+    """
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
 
@@ -52,7 +52,14 @@ class OrderProductViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows customers to be viewed or edited 
     Author: Angela Lee
-    """ 
+    """
     queryset = OrderProduct.objects.all()
     serializer_class = OrderProductSerializer
 
+class DepartmentViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows departments to be viewed or edited
+    Author: Helana Nosrat
+    """
+    queryset = Department.objects.all()
+    serializer_class = DepartmentSerializer

@@ -139,7 +139,7 @@ class OrderProduct(models.Model):
     product_id = models.ForeignKey(Product)
 
 
-class Department(models.model):
+class Department(models.Model):
     """
     This class defines a department in a table of multiple Departments.
     Author: Helana Nosrat
