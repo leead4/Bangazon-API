@@ -56,19 +56,19 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
     Author: Angela Lee
     """
     class Meta:
-        """Global Options for Order Class auth:Angela """ 
+        """Global Options for Order Class auth:Angela """
         model = Order
         fields = ('order_status', 'payment_types_id', 'purchase_customer_id')
 
 class OrderProductSerializer(serializers.HyperlinkedModelSerializer):
     """
-    Convert Order-Product model to JSON 
+    Convert Order-Product model to JSON
     Author: Angela Lee
     """
-    class Meta: 
+    class Meta:
         """ Global options for OrderProduct class """
         model = OrderProduct
-        fields = ('product', 'order')
+                fields = ('product_id', 'order_id')
 
 class TrainingCourseSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -79,3 +79,14 @@ class TrainingCourseSerializer(serializers.HyperlinkedModelSerializer):
         """ Global options for OrderProduct class """
         model = TrainingCourse
         fields = ('course_name', 'start_date', 'end_date', 'max_capacity')
+
+
+class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    Convert Department Data to JSON
+    Author: Helana
+    """
+    class Meta:
+        """ Global options for Department class """
+        model = Department
+        fields = ('name', 'expense_budget')
