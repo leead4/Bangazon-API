@@ -148,10 +148,24 @@ class OrderProduct(models.Model):
     order = models.ForeignKey(Order)
     product = models.ForeignKey(Product)
 
+class TrainingCourse(models.Model):
+    """
+    This class defines a Training Course in a table of training courses
+    Author: Max Baldridge
+    
+    The response will be a training course details response object.
 
+    Keyword Methods:
+    Course_name: string, the name of the raining course
+    Start_date: string, the date the course starts
+    End_date: string, the date the course ends
+    Max_capacity: string, shows the maximum number of employees that can attend the
+    """
 
-
-
+    course_name = models.CharField(max_length = 25)
+    start_date = models.CharField(max_length = 25)
+    end_date = models.CharField(max_length = 25)
+    max_capacity = models.CharField(max_length = 25)
 
 
 

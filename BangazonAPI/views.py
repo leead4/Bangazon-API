@@ -56,3 +56,10 @@ class OrderProductViewSet(viewsets.ModelViewSet):
     queryset = OrderProduct.objects.all()
     serializer_class = OrderProductSerializer
 
+class TrainingCourseViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows training courses to be viewed or edited 
+    Author: Max Baldridge
+    """ 
+    queryset = TrainingCourse.objects.all()
+    serializer_class = TrainingCourseSerializer

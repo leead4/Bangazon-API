@@ -69,3 +69,13 @@ class OrderProductSerializer(serializers.HyperlinkedModelSerializer):
         """ Global options for OrderProduct class """
         model = OrderProduct
         fields = ('product', 'order')
+
+class TrainingCourseSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    Convert TraingCourse model to JSON 
+    Author: Max Baldridge
+    """
+    class Meta: 
+        """ Global options for OrderProduct class """
+        model = TrainingCourse
+        fields = ('course_name', 'start_date', 'end_date', 'max_capacity')

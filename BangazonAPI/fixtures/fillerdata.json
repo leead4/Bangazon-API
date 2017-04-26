@@ -589,5 +589,105 @@
 
     }
 
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "How To Eat Pancakes Without Really Trying",
+      "start_date": "4-26-2017",
+      "end_date": "4-30-2017",
+      "max_capacity": "25"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "European Witchcraft and Its Place in the Modern Workplace",
+      "start_date": "4-26-2017",
+      "end_date": "4-30-2017",
+      "max_capacity": "35"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "The Oral History of the French Fry: An 11 Part Series",
+      "start_date": "4-30-2017",
+      "end_date": "4-30-2018",
+      "max_capacity": "18"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "Seven Habits of Highly Effective Eaters",
+      "start_date": "4-30-2017",
+      "end_date": "5-4-2017",
+      "max_capacity": "20"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "English As A First Language",
+      "start_date": "4-26-2017",
+      "end_date": "10-26-2017",
+      "max_capacity": "10"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "How to Grow a Pork Chop In Your Own Backyard!",
+      "start_date": "5-1-2017",
+      "end_date": "5-15-2017",
+      "max_capacity": "8"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "An Oral History of Hearing Loss",
+      "start_date": "5-20-2017",
+      "end_date": "5-26-2017",
+      "max_capacity": "150"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "When Life Gives You Lemons, Make a Milkshake: A 12 Step Program of Love",
+      "start_date": "5-22-2017",
+      "end_date": "5-31-2017",
+      "max_capacity": "10"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "How to Build a Boat, Sail Away, and Never Return: A 2 Part Series",
+      "start_date": "6-1-2017",
+      "end_date": "TBD",
+      "max_capacity": "12"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "How To Bring Me Back to Life If I Should Get Bored to Death",
+      "start_date": "6-10-2017",
+      "end_date": "6-16-2017",
+      "max_capacity": "15"
+    }
   }
 ]
