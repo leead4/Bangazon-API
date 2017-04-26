@@ -31,10 +31,11 @@ class Customer(models.Model):
     The response will be a product details response object.
 
     Keyword Methods:
-    First_name: string, the first name of the customer
-    Last_name: string, the last name of the customer
-    Date_created: datetime, the date the customer's account was created
-    Date_last_active: datetime, the date the customer last accessed their account
+    first_name: string, the first name of the customer
+    last_name: string, the last name of the customer
+    date_created: datetime, the date the customer's account was created
+    date_last_active: datetime, the date the customer last accessed their account
+    status_options_choices: active or inactive, selected from dropdown
     """
     first_name = models.CharField(max_length=25)
     last_name = models.CharField(max_length=25)
@@ -137,6 +138,7 @@ class OrderProduct(models.Model):
     order_id = models.ForeignKey(Order)
     product_id = models.ForeignKey(Product)
 
+
 class TrainingCourse(models.Model):
     """
     This class defines a Training Course in a table of training courses
@@ -155,6 +157,35 @@ class TrainingCourse(models.Model):
     start_date = models.CharField(max_length = 25)
     end_date = models.CharField(max_length = 25)
     max_capacity = models.CharField(max_length = 25)
+
+class Employee(models.Model):
+    """
+    This class defines a Employee in a table of employees.
+    Author: Jessica Younker
+
+    The response will be a product details response object.
+
+    Keyword Methods:
+    first_name: string, the first name of the employee
+    last_name: string, the last name of the employee
+    title: employee title
+    department_id: foreign key identifier for Employee in Deparment
+    """
+    first_name = models.CharField(max_length=25)
+    last_name = models.CharField(max_length=25)
+    title = models.DateField(auto_now_add=True)
+    department_id = models.ForeignKey(Department)
+    
+
+    def __str__(self):
+        """
+        convert Customer object to readable string
+        Author: Jessica Younker
+        """
+        return "{} {}".format(self.first_name, self.last_name)
+
+        
+
 
 
 class Department(models.Model):
