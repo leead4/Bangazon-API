@@ -13,7 +13,7 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
         Author: Jessica Younker
         """
         model = Customer
-        fields = ('firstname', 'lastname', 'status', 'date_created','date_last_active')
+        fields = ('first_name', 'last_name', 'status', 'date_created','date_last_active')
 
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
     """Convert Product model to formatted JSON string listing."""
