@@ -56,3 +56,11 @@ class OrderProductViewSet(viewsets.ModelViewSet):
     queryset = OrderProduct.objects.all()
     serializer_class = OrderProductSerializer
 
+class ComputerViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows customers to be viewed or edited
+    Author: Angela Lee
+    """
+    queryset = Computer.objects.all()
+    serializer_class = ComputerSerializer
+
