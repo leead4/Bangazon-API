@@ -104,8 +104,7 @@ class Product(models.Model):
         Interacts with admin interface.
         """
 
-        return "{} {} {}".format(self.product_title, self.product_price,
-                              self.product_description)
+        return "{} {} {}".format(self.title, self.price, self.description)
 
 
 class PaymentType(models.Model):
