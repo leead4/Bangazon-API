@@ -84,7 +84,7 @@ class Product(models.Model):
         Return a string listing product fields.
         Interacts with admin interface.
         """
-        return "{} {}".format(self.product_title, self.product_price, self.product_description)
+        return "{} {}".format(self.title, self.price, self.description)
 
 class PaymentType(models.Model):
     """
@@ -158,34 +158,6 @@ class TrainingCourse(models.Model):
     end_date = models.CharField(max_length = 25)
     max_capacity = models.CharField(max_length = 25)
 
-class Employee(models.Model):
-    """
-    This class defines a Employee in a table of employees.
-    Author: Jessica Younker
-
-    The response will be a product details response object.
-
-    Keyword Methods:
-    first_name: string, the first name of the employee
-    last_name: string, the last name of the employee
-    title: employee title
-    department_id: foreign key identifier for Employee in Deparment
-    """
-    first_name = models.CharField(max_length=25)
-    last_name = models.CharField(max_length=25)
-    title = models.DateField(auto_now_add=True)
-    department_id = models.ForeignKey(Department)
-    
-
-    def __str__(self):
-        """
-        convert Customer object to readable string
-        Author: Jessica Younker
-        """
-        return "{} {}".format(self.first_name, self.last_name)
-
-        
-
 
 
 class Department(models.Model):
@@ -203,3 +175,29 @@ class Department(models.Model):
 
     name = models.CharField(max_length=25)
     expense_budget = models.DecimalField(max_digits=10, decimal_places=2)
+
+class Employee(models.Model):
+    """
+    This class defines a Employee in a table of employees.
+    Author: Jessica Younker
+
+    The response will be a employee details response object.
+
+    Keyword Methods:
+    first_name: string, the first name of the employee
+    last_name: string, the last name of the employee
+    title: employee title
+    department_id: foreign key identifier for Employee in Deparment
+    """
+    first_name = models.CharField(max_length=25)
+    last_name = models.CharField(max_length=25)
+    title = models.CharField(max_length=25)
+    department_id = models.ForeignKey(Department)
+    
+
+    def __str__(self):
+        """
+        convert Customer object to readable string
+        Author: Jessica Younker
+        """
+        return "{} {}".format(self.first_name, self.last_name)

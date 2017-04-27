@@ -25,7 +25,7 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
         """Global options for Product class."""
 
         model = Product
-        fields = ('product_title', 'product_price', 'product_description',
+        fields = ('title', 'price', 'description',
                   'customer_id', 'product_type_id')
 
 
@@ -90,7 +90,6 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
         """ Global options for Department class """
         model = Department
         fields = ('name', 'expense_budget')
-        fields = ('product_id', 'order_id')
 
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     """
