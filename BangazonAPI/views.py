@@ -50,7 +50,7 @@ class OrderViewSet(viewsets.ModelViewSet):
 
 class OrderProductViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows customers to be viewed or edited 
+    API endpoint that allows customers to be viewed or edited
     Author: Angela Lee
     """
     queryset = OrderProduct.objects.all()
@@ -59,9 +59,9 @@ class OrderProductViewSet(viewsets.ModelViewSet):
 
 class TrainingCourseViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows training courses to be viewed or edited 
+    API endpoint that allows training courses to be viewed or edited
     Author: Max Baldridge
-    """ 
+    """
     queryset = TrainingCourse.objects.all()
     serializer_class = TrainingCourseSerializer
 
@@ -75,10 +75,16 @@ class DepartmentViewSet(viewsets.ModelViewSet):
 
 class EmployeeViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows customers to be viewed or edited 
+    API endpoint that allows customers to be viewed or edited
     Author: Angela Lee
-    """ 
+    """
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
 
-
+class EmployeeTrainingViewSet(viewsets.ModelViewSet)
+    """
+    API endpoint that allows customers to be viewed or edited
+    Author: Justin Short
+    """
+    queryset = EmployeeTraining.objects.all()
+    serializer_class = EmployeeTrainingSerializer

@@ -72,10 +72,10 @@ class OrderProductSerializer(serializers.HyperlinkedModelSerializer):
 
 class TrainingCourseSerializer(serializers.HyperlinkedModelSerializer):
     """
-    Convert TraingCourse model to JSON 
+    Convert TraingCourse model to JSON
     Author: Max Baldridge
     """
-    class Meta: 
+    class Meta:
         """ Global options for OrderProduct class """
         model = TrainingCourse
         fields = ('course_name', 'start_date', 'end_date', 'max_capacity')
@@ -93,10 +93,21 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
 
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     """
-    Convert Order-Product model to JSON 
+    Convert Order-Product model to JSON
     Author: Angela Lee
     """
-    class Meta: 
+    class Meta:
         """ Global options for OrderProduct class """
         model = Employee
         fields = ('first_name', 'last_name', 'title', 'department_id')
+class EmployeeTrainingSerializer(serializers.HyperlinkedModelSerializer):
+
+    """
+    Convert Employee_Training to JSON
+    Author: Justin Short
+    """
+
+    class Meta:
+        """ Global options for EmployeeTraining Class """
+        model = EmployeeTraining
+        fields = ('employee_id', 'training_id')
