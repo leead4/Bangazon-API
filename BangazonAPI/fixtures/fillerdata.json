@@ -773,6 +773,99 @@
         "expense_budget": 9000
 
   }
+},
+
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Milton",
+    "last_name": "Pouncy",
+    "title": "Supervisor",
+    "department_id": "1"
+  }
+},
+
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Bad",
+    "last_name": "Larry",
+    "title": "Lead Developer",
+    "department_id": "1"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Arnie",
+    "last_name": "Pecanroll",
+    "title": "Workerbee",
+    "department_id": "2"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Samwise",
+    "last_name": "Ganges",
+    "title": "Workerbee",
+    "department_id": "3"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Fanny",
+    "last_name": "Doggonit",
+    "title": "Supervisor",
+    "department_id": "4"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Ashley",
+    "last_name": "Winfrey",
+    "title": "Secretary",
+    "department_id": "5"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Jens",
+    "last_name": "Farfignuget",
+    "title": "Coffeeguy",
+    "department_id": "6"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Parcheesy",
+    "last_name": "Patterpants",
+    "title": "Kittykat",
+    "department_id": "7"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Randy",
+    "last_name": "Maxwellhouse",
+    "title": "Supervisor",
+    "department_id": "8"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Winston",
+    "last_name": "Theghosbuster",
+    "title": "Supervisor",
+    "department_id": "9"
+  }
 }
+
 
 ]
