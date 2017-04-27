@@ -16,7 +16,7 @@ class ProductType(models.Model):
     product_quantity = models.IntegerField(default=0) # This will be used to show amount of products in each type
 
     def __str__(self):
-        return "{}'s have {} amount of products".format(self.product_type, self.product_quantity)
+        return "{} : {}-count".format(self.product_type, self.product_quantity)
 
 
 def set_customer_status(customer):
@@ -107,6 +107,13 @@ class PaymentType(models.Model):
     payment_type_provider = models.CharField(max_length=25)
     account_number = models.CharField(max_length=25)
 
+    def __str__(self):
+        """
+        Return a string listing product fields.
+        Interacts with admin interface.
+        """
+        return "{}".format(self.payment_type_provider)
+
 class Order(models.Model):
     """
     This class defines a Order in a table of orders.
@@ -123,6 +130,13 @@ class Order(models.Model):
     order_status = models.CharField(max_length = 25)
     payment_types = models.ForeignKey(PaymentType)
     purchase_customer = models.ForeignKey(Customer)
+
+    def __str__(self):
+        """
+        convert Customer object to readable string
+        Author: Jessica Younker
+        """
+        return "{}'s' order is {}".format(self.purchase_customer_id, self.order_status)
 
 class OrderProduct(models.Model):
     """
@@ -158,7 +172,12 @@ class TrainingCourse(models.Model):
     end_date = models.CharField(max_length = 25)
     max_capacity = models.CharField(max_length = 25)
 
-
+    def __str__(self):
+        """
+        convert Customer object to readable string
+        Author: Jessica Younker
+        """
+        return "{}".format(self.course_name)
 
 class Department(models.Model):
     """
@@ -176,6 +195,13 @@ class Department(models.Model):
     name = models.CharField(max_length=25)
     expense_budget = models.DecimalField(max_digits=10, decimal_places=2)
 
+
+    def __str__(self):
+        """
+        convert Customer object to readable string
+        Author: Jessica Younker
+        """
+        return "{}".format(self.name)
 
 class Employee(models.Model):
     """
