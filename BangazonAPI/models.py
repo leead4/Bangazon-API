@@ -154,7 +154,6 @@ class OrderProduct(models.Model):
     product = models.ForeignKey(Product)
 
 
-
 class TrainingCourse(models.Model):
     """
     This class defines a Training Course in a table of training courses
@@ -233,6 +232,7 @@ class Employee(models.Model):
         """
         return "{} {}".format(self.first_name, self.last_name)
 
+
 class EmployeeTraining(models.Model):
 
     """
@@ -250,3 +250,21 @@ class EmployeeTraining(models.Model):
 
     employee =  models.ForeignKey(Employee)
     training = models.ForeignKey(TrainingCourse)
+
+class Computer(models.Model):
+    """
+    This class defines the computer class
+    Author: Angela Lee
+
+    The response will be computer details repsonse object
+
+    Keyword Methods:
+    Buy_date:
+    Decommision_date:
+    Employee_id: foreign key identifier for Employee in Employee
+
+    """
+    buy_date = models.DateField(auto_now_add=False)
+    decommission_date = models.DateField(auto_now_add=False)
+    employee = models.ForeignKey(Employee)
+
