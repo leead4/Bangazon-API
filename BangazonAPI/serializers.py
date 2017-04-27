@@ -111,4 +111,4 @@ class EmployeeTrainingSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         """ Global options for EmployeeTraining Class """
         model = EmployeeTraining
-        fields = ('employee_id', 'training_id')
+        fields = ('employee', 'training')

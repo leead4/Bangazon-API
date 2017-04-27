@@ -212,10 +212,10 @@ class EmployeeTraining(models.Model):
     The response will be a employee training relationship details response object.
 
     Keyword Methods:
-    employee_id: foreign key identifier for employee in
-    training_id: foreign key identifier for Product in orderproduct
+    employee: foreign key identifier for employee in
+    training: foreign key identifier for Product in orderproduct
 
     """
 
-    employee_id =  models.ForeignKey(Employee)
-    training_id = models.ForeignKey(TrainingCourse)
+    employee =  models.ForeignKey(Employee)
+    training = models.ForeignKey(TrainingCourse)
