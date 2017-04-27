@@ -100,6 +100,7 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
         """ Global options for OrderProduct class """
         model = Employee
         fields = ('first_name', 'last_name', 'title', 'department_id')
+
 class EmployeeTrainingSerializer(serializers.HyperlinkedModelSerializer):
 
     """

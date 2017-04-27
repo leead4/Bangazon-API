@@ -81,7 +81,7 @@ class EmployeeViewSet(viewsets.ModelViewSet):
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
 
-class EmployeeTrainingViewSet(viewsets.ModelViewSet)
+class EmployeeTrainingViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows customers to be viewed or edited
     Author: Justin Short
