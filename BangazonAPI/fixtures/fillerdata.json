@@ -866,91 +866,91 @@
     "department_id": "9"
   }
 },
-{
+    {
 
-"model": "BangazonAPI.employeetraining",
-"fields": {
-  "employee_id": 1,
-  "training_id": 1
-}
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee_id": 1,
+      "training_id": 1
+    }
 
-},
+  },
 
-{
+    {
 
-"model": "BangazonAPI.employeetraining",
-"fields": {
-  "employee_id": 2,
-  "training_id": 2
-}
-},
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee_id": 2,
+      "training_id": 2
+    }
+  },
 
-{
+    {
 
-"model": "BangazonAPI.employeetraining",
-"fields": {
-  "employee_id": 3,
-  "training_id": 3
-}
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee_id": 3,
+      "training_id": 3
+    }
 
-},
+  },
 
-{
-"model": "BangazonAPI.employeetraining",
-"fields": {
-  "employee_id": 4,
-  "training_id": 4
-}
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee_id": 4,
+      "training_id": 4
+    }
 
-},
+  },
 
-{
-"model": "BangazonAPI.employeetraining",
-"fields": {
-  "employee_id": 5,
-  "training_id": 5
-}
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee_id": 5,
+      "training_id": 5
+    }
 
-},
+  },
 
-{
-"model": "BangazonAPI.employeetraining",
-"fields": {
-  "employee_id": 6,
-  "training_id": 6
-}
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee_id": 6,
+      "training_id": 6
+    }
 
-},
+  },
 
-{
-"model": "BangazonAPI.employeetraining",
-"fields": {
-  "employee_id": 7,
-  "training_id": 7
-}
-},
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee_id": 7,
+      "training_id": 7
+    }
+  },
 
-{
-"model": "BangazonAPI.employeetraining",
-"fields": {
-  "employee_id": 8,
-  "training_id": 8
-}
-},
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee_id": 8,
+      "training_id": 8
+    }
+  },
 
-{
-"model": "BangazonAPI.employeetraining",
-"fields": {
-  "employee_id": 9,
-  "training_id": 9
-}
-},
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee_id": 9,
+      "training_id": 9
+    }
+  },
 
-{
-"model": "BangazonAPI.employeetraining",
-"fields": {
-  "employee_id": 10,
-  "training_id": 10
-}
-}
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee_id": 10,
+      "training_id": 10
+    }
+  }
 ]

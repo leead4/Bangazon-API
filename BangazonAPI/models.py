@@ -204,18 +204,18 @@ class Employee(models.Model):
 
 class EmployeeTraining(models.Model):
 
-        """
+    """
 
-        This class defines a relationship between Employees and EmployeeTraining.
-        Author: Justin Short
+    This class defines a relationship between Employees and EmployeeTraining.
+    Author: Justin Short
 
-        The response will be a employee training relationship details response object.
+    The response will be a employee training relationship details response object.
 
-        Keyword Methods:
-        employee_id: foreign key identifier for employee in
-        training_id: foreign key identifier for Product in orderproduct
+    Keyword Methods:
+    employee_id: foreign key identifier for employee in
+    training_id: foreign key identifier for Product in orderproduct
 
-        """
+    """
 
-        employee_id: models.ForeignKey(Employee)
-        training_id: models.ForeignKey(TrainingCourse)
+    employee_id: models.ForeignKey(Employee)
+    training_id: models.ForeignKey(TrainingCourse)
