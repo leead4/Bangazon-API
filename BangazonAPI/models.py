@@ -1,9 +1,9 @@
 from django.db import models
 
-
 class ProductType(models.Model):
     """
     This class defines a ProductType in a table of producttypes.
+
     Author: Justin Short
 
     The response will be a producttype details response object.
@@ -12,20 +12,34 @@ class ProductType(models.Model):
     Product_type: string, the name of the product type
     Product_quantity: integer, how many of a product exists
     """
+
     product_type = models.CharField(max_length=45)
-    product_quantity = models.IntegerField(default=0) # This will be used to show amount of products in each type
+    product_quantity = models.IntegerField(default=0)
+    # This will be used to show amount of products in each type
 
     def __str__(self):
+        """
+        Converted Product Type data object to readable string.
+
+        Author: Justin Short
+        """
         return "{} : {}-count".format(self.product_type, self.product_quantity)
 
 
+
 def set_customer_status(customer):
+    """
+    Sets customer status object to ACTIVE.
+
+    Author: Justin Short
+    """
     customer.status = 'ACTIVE'
 
 
 class Customer(models.Model):
     """
     This class defines a Customer in a table of customers.
+
     Author: Jessica Younker
 
     The response will be a product details response object.
@@ -37,6 +51,7 @@ class Customer(models.Model):
     date_last_active: datetime, the date the customer last accessed their account
     status_options_choices: active or inactive, selected from dropdown
     """
+
     first_name = models.CharField(max_length=25)
     last_name = models.CharField(max_length=25)
     date_created = models.DateField(auto_now_add=True)
@@ -48,11 +63,13 @@ class Customer(models.Model):
         (ACTIVE, "Active"),
         (INACTIVE, "Inactive")
     )
-    status = models.CharField(max_length=8, choices=STATUS_OPTIONS_CHOICES, default=ACTIVE)
+    status = models.CharField(max_length=8, choices=STATUS_OPTIONS_CHOICES,
+                              default=ACTIVE)
 
     def __str__(self):
         """
-        convert Customer object to readable string
+        Converted Customer object to readable string.
+
         Author: Jessica Younker
         """
         return "{} {}".format(self.first_name, self.last_name)
@@ -61,6 +78,7 @@ class Customer(models.Model):
 class Product(models.Model):
     """
     This class defines a Product in a table of products.
+
     Author: Helana Nosrat
 
     The response will be a product details response object.
@@ -82,13 +100,18 @@ class Product(models.Model):
     def __str__(self):
         """
         Return a string listing product fields.
+
         Interacts with admin interface.
         """
-        return "{} {}".format(self.title, self.price, self.description)
+
+        return "{} {} {}".format(self.product_title, self.product_price,
+                              self.product_description)
+
 
 class PaymentType(models.Model):
     """
     This class defines a Payment Type in a table of products.
+
     Author: Max Baldridge
 
     The response will be a payment type details response object.
@@ -98,6 +121,7 @@ class PaymentType(models.Model):
     Account_number: string, a string of numbers and/or letters
     Customer_id: foreign key identifier for customers in products
     """
+
     customer = models.ForeignKey(
         Customer,
         on_delete=models.CASCADE,
@@ -114,9 +138,11 @@ class PaymentType(models.Model):
         """
         return "{}".format(self.payment_type_provider)
 
+
 class Order(models.Model):
     """
     This class defines a Order in a table of orders.
+
     Author: Angela Lee
 
     The response will be a order details response object.
@@ -138,9 +164,12 @@ class Order(models.Model):
         """
         return "{}'s' order is {}".format(self.purchase_customer_id, self.order_status)
 
+
 class OrderProduct(models.Model):
     """
-    This class defines a relationship between Orders and Products in a table of orderproducts.
+    This class defines a relationship between Orders and Products in a table of
+    orderproducts.
+
     Author: Angela Lee
 
     The response will be a orderproduct relationship details response object.
@@ -148,8 +177,8 @@ class OrderProduct(models.Model):
     Keyword Methods:
     Order_id: foreign key identifier for order in orderproduct
     Product_id: foreign key identifier for Product in orderproduct
-
-    """ 
+    """
+    
     order = models.ForeignKey(Order)
     product = models.ForeignKey(Product)
 
@@ -157,6 +186,7 @@ class OrderProduct(models.Model):
 class TrainingCourse(models.Model):
     """
     This class defines a Training Course in a table of training courses
+    
     Author: Max Baldridge
 
     The response will be a training course details response object.
@@ -183,14 +213,15 @@ class TrainingCourse(models.Model):
 class Department(models.Model):
     """
     This class defines a department in a table of multiple Departments.
+
     Author: Helana Nosrat
 
     The response will be a department detail response object.
 
     Keyword Methods:
     department_name: a string providing a department name
-    expense_budget: a string providing a departments alotted expense budget in US dollars.
-
+    expense_budget: a string providing a departments alotted expense budget in
+    US dollars.
     """
 
     name = models.CharField(max_length=25)
@@ -207,6 +238,7 @@ class Department(models.Model):
 class Employee(models.Model):
     """
     This class defines a Employee in a table of employees.
+    
     Author: Jessica Younker
 
     The response will be a employee details response object.
@@ -236,8 +268,8 @@ class Employee(models.Model):
 class EmployeeTraining(models.Model):
 
     """
-
     This class defines a relationship between Employees and EmployeeTraining.
+    
     Author: Justin Short
 
     The response will be a employee training relationship details response object.
@@ -245,7 +277,6 @@ class EmployeeTraining(models.Model):
     Keyword Methods:
     employee: foreign key identifier for employee in
     training: foreign key identifier for Product in orderproduct
-
     """
 
     employee =  models.ForeignKey(Employee)
