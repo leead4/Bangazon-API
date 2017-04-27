@@ -6,3 +6,4 @@ bin
 *.DS_Store
 obj
 *.sqlite3
+*/migrations/
