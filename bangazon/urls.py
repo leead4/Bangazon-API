@@ -13,6 +13,7 @@ router.register(r'trainingcourse', views.TrainingCourseViewSet)
 router.register(r'department', views.DepartmentViewSet)
 router.register(r'employee', views.EmployeeViewSet)
 router.register(r'employeetraining', views.EmployeeTrainingViewSet)
+router.register(r'computer', views.ComputerViewSet)
 
 
 # Wire up our API using automatic URL routing.
