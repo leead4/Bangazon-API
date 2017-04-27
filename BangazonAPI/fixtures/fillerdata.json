@@ -865,7 +865,106 @@
     "title": "Supervisor",
     "department": "9"
   }
-}
+},
+  {
+    "model": "BangazonAPI.computer",
+    "fields": {
+      "buy_date": "2017-11-11",
+      "decommission_date": "3000-10-10",
+      "employee_id":1 
 
+    }
+
+  },
+  {
+    "model": "BangazonAPI.computer",
+    "fields": {
+      "buy_date": "2017-11-11",
+      "decommission_date": "3000-10-10",
+      "employee_id":1 
+
+    }
+
+  },
+  {
+    "model": "BangazonAPI.computer",
+    "fields": {
+      "buy_date": "2017-11-11",
+      "decommission_date": "3000-10-10",
+      "employee_id":1 
+
+    }
+
+  },
+  {
+    "model": "BangazonAPI.computer",
+    "fields": {
+      "buy_date": "2017-11-11",
+      "decommission_date": "3000-10-10",
+      "employee_id": 2 
+
+    }
+
+  },
+  {
+    "model": "BangazonAPI.computer",
+    "fields": {
+      "buy_date": "2017-11-11",
+      "decommission_date": "3000-10-10",
+      "employee_id": 1 
+
+    }
+
+  },
+  {
+    "model": "BangazonAPI.computer",
+    "fields": {
+      "buy_date": "2017-11-11",
+      "decommission_date": "3000-10-10",
+      "employee_id": 2
+
+    }
+
+  },
+  {
+    "model": "BangazonAPI.computer",
+    "fields": {
+      "buy_date": "2017-11-11",
+      "decommission_date": "3000-10-10",
+      "employee_id": 1 
+
+    }
+
+  },
+  {
+    "model": "BangazonAPI.computer",
+    "fields": {
+      "buy_date": "2017-11-11",
+      "decommission_date": "3000-10-10",
+      "employee_id": 3 
+
+    }
+
+  },
+  {
+    "model": "BangazonAPI.computer",
+    "fields": {
+      "buy_date": "2017-11-11",
+      "decommission_date": "3000-10-10",
+      "employee_id": 1 
+
+    }
+
+  },
+  {
+    "model": "BangazonAPI.computer",
+    "fields": {
+      "buy_date": "2017-11-11",
+      "decommission_date": "3000-10-10",
+      "employee_id": 2
+
+    }
+
+  },  
 
 ]

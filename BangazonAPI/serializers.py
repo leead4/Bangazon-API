@@ -99,4 +99,17 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta: 
         """ Global options for OrderProduct class """
         model = Employee
+
         fields = ('first_name', 'last_name', 'title', 'department')
+
+class ComputerSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    Convert Computer model to JSON 
+    Author: Angela Lee
+    """
+    class Meta:
+        """ Global options for Computer class """
+        model = Computer
+        fields = ('buy_date', 'decommission_date', 'employee_id')
+
+
