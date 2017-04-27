@@ -26,7 +26,7 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
 
         model = Product
         fields = ('title', 'price', 'description',
-                  'customer_id', 'product_type_id')
+                  'customer', 'product_type')
 
 
 class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
@@ -58,7 +58,7 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         """Global Options for Order Class auth:Angela """
         model = Order
-        fields = ('order_status', 'payment_types_id', 'purchase_customer_id')
+        fields = ('order_status', 'payment_types', 'purchase_customer')
 
 class OrderProductSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -68,7 +68,7 @@ class OrderProductSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         """ Global options for OrderProduct class """
         model = OrderProduct
-        fields = ('product_id', 'order_id')
+        fields = ('product', 'order')
 
 class TrainingCourseSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -99,4 +99,4 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta: 
         """ Global options for OrderProduct class """
         model = Employee
-        fields = ('first_name', 'last_name', 'title', 'department_id')
+        fields = ('first_name', 'last_name', 'title', 'department')
