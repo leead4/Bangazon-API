@@ -122,6 +122,6 @@ class ComputerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         """ Global options for Computer class """
         model = Computer
-        fields = ('buy_date', 'decommission_date', 'employee_id')
+        fields = ('buy_date', 'decommission_date', 'employee')
 
 
