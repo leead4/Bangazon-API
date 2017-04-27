@@ -70,7 +70,6 @@ class OrderProductSerializer(serializers.HyperlinkedModelSerializer):
         model = OrderProduct
         fields = ('product_id', 'order_id')
 
-<<<<<<< HEAD
 class TrainingCourseSerializer(serializers.HyperlinkedModelSerializer):
     """
     Convert TraingCourse model to JSON 
@@ -101,7 +100,7 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
         """ Global options for OrderProduct class """
         model = Employee
         fields = ('first_name', 'last_name', 'title', 'department_id')
-=======
+
 class ComputerSerializer(serializers.HyperlinkedModelSerializer):
     """
     Convert Computer model to JSON 
@@ -111,4 +110,4 @@ class ComputerSerializer(serializers.HyperlinkedModelSerializer):
         """ Global options for Computer class """
         model = Computer
         fields = ('buy_date', 'decommission_date', 'employee_id')
->>>>>>> adl_wed245
+

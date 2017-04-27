@@ -865,9 +865,7 @@
     "title": "Supervisor",
     "department_id": "9"
   }
-}
-
-
+},
   {
     "model": "BangazonAPI.computer",
     "fields": {
