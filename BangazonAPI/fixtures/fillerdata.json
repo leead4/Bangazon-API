@@ -865,7 +865,92 @@
     "title": "Supervisor",
     "department": "9"
   }
-}
+},
+    {
 
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 1,
+      "training": 1
+    }
 
+  },
+
+    {
+
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 2,
+      "training": 2
+    }
+  },
+
+    {
+
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 3,
+      "training": 3
+    }
+
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 4,
+      "training": 4
+    }
+
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 5,
+      "training": 5
+    }
+
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 6,
+      "training": 6
+    }
+
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 7,
+      "training": 7
+    }
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 8,
+      "training": 8
+    }
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 9,
+      "training": 9
+    }
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 10,
+      "training": 10
+    }
+  }
 ]

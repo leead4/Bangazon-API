@@ -148,16 +148,18 @@ class OrderProduct(models.Model):
     Keyword Methods:
     Order_id: foreign key identifier for order in orderproduct
     Product_id: foreign key identifier for Product in orderproduct
+
     """ 
     order = models.ForeignKey(Order)
     product = models.ForeignKey(Product)
+
 
 
 class TrainingCourse(models.Model):
     """
     This class defines a Training Course in a table of training courses
     Author: Max Baldridge
-    
+
     The response will be a training course details response object.
 
     Keyword Methods:
@@ -219,8 +221,10 @@ class Employee(models.Model):
     first_name = models.CharField(max_length=25)
     last_name = models.CharField(max_length=25)
     title = models.CharField(max_length=25)
+
     department = models.ForeignKey(Department)
     
+
 
     def __str__(self):
         """
@@ -228,3 +232,21 @@ class Employee(models.Model):
         Author: Jessica Younker
         """
         return "{} {}".format(self.first_name, self.last_name)
+
+class EmployeeTraining(models.Model):
+
+    """
+
+    This class defines a relationship between Employees and EmployeeTraining.
+    Author: Justin Short
+
+    The response will be a employee training relationship details response object.
+
+    Keyword Methods:
+    employee: foreign key identifier for employee in
+    training: foreign key identifier for Product in orderproduct
+
+    """
+
+    employee =  models.ForeignKey(Employee)
+    training = models.ForeignKey(TrainingCourse)
