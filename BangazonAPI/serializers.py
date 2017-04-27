@@ -25,8 +25,8 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
         """Global options for Product class."""
 
         model = Product
-        fields = ('product_title', 'product_price', 'product_description',
-                  'customer_id', 'product_type_id')
+        fields = ('title', 'price', 'description',
+                  'customer', 'product_type')
 
 
 class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
@@ -58,7 +58,7 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         """Global Options for Order Class auth:Angela """
         model = Order
-        fields = ('order_status', 'payment_types_id', 'purchase_customer_id')
+        fields = ('order_status', 'payment_types', 'purchase_customer')
 
 class OrderProductSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -68,7 +68,18 @@ class OrderProductSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         """ Global options for OrderProduct class """
         model = OrderProduct
-        fields = ('product_id', 'order_id')
+        fields = ('product', 'order')
+
+class TrainingCourseSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    Convert TraingCourse model to JSON
+    Author: Max Baldridge
+    """
+    class Meta:
+        """ Global options for OrderProduct class """
+        model = TrainingCourse
+        fields = ('course_name', 'start_date', 'end_date', 'max_capacity')
+
 
 class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -79,3 +90,25 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
         """ Global options for Department class """
         model = Department
         fields = ('name', 'expense_budget')
+
+class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    Convert Order-Product model to JSON
+    Author: Angela Lee
+    """
+    class Meta:
+        """ Global options for OrderProduct class """
+        model = Employee
+        fields = ('first_name', 'last_name', 'title', 'department')
+
+class EmployeeTrainingSerializer(serializers.HyperlinkedModelSerializer):
+
+    """
+    Convert Employee_Training to JSON
+    Author: Justin Short
+    """
+
+    class Meta:
+        """ Global options for EmployeeTraining Class """
+        model = EmployeeTraining
+        fields = ('employee', 'training')

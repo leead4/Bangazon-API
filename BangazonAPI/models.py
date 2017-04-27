@@ -23,8 +23,8 @@ class ProductType(models.Model):
 
         Author: Justin Short
         """
-        return "{}'s have {} amount of products".format(self.product_type,
-                                                        self.product_quantity)
+        return "{} : {}-count".format(self.product_type, self.product_quantity)
+
 
 
 def set_customer_status(customer):
@@ -45,11 +45,11 @@ class Customer(models.Model):
     The response will be a product details response object.
 
     Keyword Methods:
-    First_name: string, the first name of the customer
-    Last_name: string, the last name of the customer
-    Date_created: datetime, the date the customer's account was created
-    Date_last_active: datetime, the date the customer last accessed their
-    account
+    first_name: string, the first name of the customer
+    last_name: string, the last name of the customer
+    date_created: datetime, the date the customer's account was created
+    date_last_active: datetime, the date the customer last accessed their account
+    status_options_choices: active or inactive, selected from dropdown
     """
 
     first_name = models.CharField(max_length=25)
@@ -94,8 +94,8 @@ class Product(models.Model):
     title = models.CharField(max_length=25)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     description = models.CharField(max_length=100)
-    customer_id = models.ForeignKey(Customer)
-    product_type_id = models.ForeignKey(ProductType)
+    customer= models.ForeignKey(Customer)
+    product_type = models.ForeignKey(ProductType)
 
     def __str__(self):
         """
@@ -103,7 +103,8 @@ class Product(models.Model):
 
         Interacts with admin interface.
         """
-        return "{} {}".format(self.product_title, self.product_price,
+
+        return "{} {} {}".format(self.product_title, self.product_price,
                               self.product_description)
 
 
@@ -130,6 +131,13 @@ class PaymentType(models.Model):
     payment_type_provider = models.CharField(max_length=25)
     account_number = models.CharField(max_length=25)
 
+    def __str__(self):
+        """
+        Return a string listing product fields.
+        Interacts with admin interface.
+        """
+        return "{}".format(self.payment_type_provider)
+
 
 class Order(models.Model):
     """
@@ -145,9 +153,16 @@ class Order(models.Model):
     Purchase_customer_id: foreign key identifier for customers in orders
     """
 
-    order_status = models.CharField(max_length=25)
-    payment_types_id = models.ForeignKey(PaymentType)
-    purchase_customer_id = models.ForeignKey(Customer)
+    order_status = models.CharField(max_length = 25)
+    payment_types = models.ForeignKey(PaymentType)
+    purchase_customer = models.ForeignKey(Customer)
+
+    def __str__(self):
+        """
+        convert Customer object to readable string
+        Author: Jessica Younker
+        """
+        return "{}'s' order is {}".format(self.purchase_customer_id, self.order_status)
 
 
 class OrderProduct(models.Model):
@@ -163,10 +178,38 @@ class OrderProduct(models.Model):
     Order_id: foreign key identifier for order in orderproduct
     Product_id: foreign key identifier for Product in orderproduct
     """
+    
+    order = models.ForeignKey(Order)
+    product = models.ForeignKey(Product)
 
-    order_id = models.ForeignKey(Order)
-    product_id = models.ForeignKey(Product)
 
+
+class TrainingCourse(models.Model):
+    """
+    This class defines a Training Course in a table of training courses
+    
+    Author: Max Baldridge
+
+    The response will be a training course details response object.
+
+    Keyword Methods:
+    Course_name: string, the name of the raining course
+    Start_date: string, the date the course starts
+    End_date: string, the date the course ends
+    Max_capacity: string, shows the maximum number of employees that can attend the
+    """
+
+    course_name = models.CharField(max_length = 25)
+    start_date = models.CharField(max_length = 25)
+    end_date = models.CharField(max_length = 25)
+    max_capacity = models.CharField(max_length = 25)
+
+    def __str__(self):
+        """
+        convert Customer object to readable string
+        Author: Jessica Younker
+        """
+        return "{}".format(self.course_name)
 
 class Department(models.Model):
     """
@@ -184,3 +227,57 @@ class Department(models.Model):
 
     name = models.CharField(max_length=25)
     expense_budget = models.DecimalField(max_digits=10, decimal_places=2)
+
+
+    def __str__(self):
+        """
+        convert Customer object to readable string
+        Author: Jessica Younker
+        """
+        return "{}".format(self.name)
+
+class Employee(models.Model):
+    """
+    This class defines a Employee in a table of employees.
+    
+    Author: Jessica Younker
+
+    The response will be a employee details response object.
+
+    Keyword Methods:
+    first_name: string, the first name of the employee
+    last_name: string, the last name of the employee
+    title: employee title
+    department_id: foreign key identifier for Employee in Deparment
+    """
+    first_name = models.CharField(max_length=25)
+    last_name = models.CharField(max_length=25)
+    title = models.CharField(max_length=25)
+
+    department = models.ForeignKey(Department)
+    
+
+
+    def __str__(self):
+        """
+        convert Customer object to readable string
+        Author: Jessica Younker
+        """
+        return "{} {}".format(self.first_name, self.last_name)
+
+class EmployeeTraining(models.Model):
+
+    """
+    This class defines a relationship between Employees and EmployeeTraining.
+    
+    Author: Justin Short
+
+    The response will be a employee training relationship details response object.
+
+    Keyword Methods:
+    employee: foreign key identifier for employee in
+    training: foreign key identifier for Product in orderproduct
+    """
+
+    employee =  models.ForeignKey(Employee)
+    training = models.ForeignKey(TrainingCourse)

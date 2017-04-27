@@ -105,8 +105,8 @@
       "title": "armchair",
       "price": 100,
       "description": "Comfy lazyboy",
-      "customer_id": 2,
-      "product_type_id": 4
+      "customer": 2,
+      "product_type": 4
     }
   },
   {
@@ -115,8 +115,8 @@
       "title": "loveseat",
       "price": 200,
       "description": "Comfy ethanallen",
-      "customer_id": 6,
-      "product_type_id": 8
+      "customer": 6,
+      "product_type": 8
     }
   },
   {
@@ -125,8 +125,8 @@
       "title": "couch",
       "price": 300,
       "description": "Comfy serta",
-      "customer_id": 10,
-      "product_type_id": 1
+      "customer": 10,
+      "product_type": 1
     }
   },
   {
@@ -135,8 +135,8 @@
       "title": "director's chair",
       "price": 50,
       "description": "signed by hitchcock",
-      "customer_id": 3,
-      "product_type_id": 5
+      "customer": 3,
+      "product_type": 5
     }
   },
   {
@@ -145,8 +145,8 @@
       "title": "stool",
       "price": 100,
       "description": "metal",
-      "customer_id": 7,
-      "product_type_id": 9
+      "customer": 7,
+      "product_type": 9
     }
   },
   {
@@ -155,8 +155,8 @@
       "title": "fake plant",
       "price": 80,
       "description": "purifies air",
-      "customer_id": 9,
-      "product_type_id": 6
+      "customer": 9,
+      "product_type": 6
     }
   },
   {
@@ -165,8 +165,8 @@
       "title": "rug",
       "price": 110,
       "description": "ties room together",
-      "customer_id": 4,
-      "product_type_id": 3
+      "customer": 4,
+      "product_type": 3
     }
   },
   {
@@ -175,8 +175,8 @@
       "title": "armchair",
       "price": 200,
       "description": "tasteful upholstry",
-      "customer_id": 2,
-      "product_type_id": 1
+      "customer": 2,
+      "product_type": 1
     }
   },
   {
@@ -185,8 +185,8 @@
       "title": "armchair",
       "price": 1000,
       "description": "reclines",
-      "customer_id": 1,
-      "product_type_id": 1
+      "customer": 1,
+      "product_type": 1
     }
   },
   {
@@ -195,8 +195,8 @@
       "title": "desk",
       "price": 900,
       "description": "wood",
-      "customer_id": 3,
-      "product_type_id": 7
+      "customer": 3,
+      "product_type": 7
     }
   },
   {
@@ -393,8 +393,8 @@
     "model": "BangazonAPI.order",
     "fields": {
       "order_status": "active",
-      "payment_types_id": 1,
-      "purchase_customer_id": 5
+      "payment_types": 1,
+      "purchase_customer": 5
 
     }
 
@@ -403,8 +403,8 @@
     "model": "BangazonAPI.order",
     "fields": {
       "order_status": "active",
-      "payment_types_id": 1,
-      "purchase_customer_id": 5
+      "payment_types": 1,
+      "purchase_customer": 5
 
     }
 
@@ -413,8 +413,8 @@
     "model": "BangazonAPI.order",
     "fields": {
       "order_status": "inactive",
-      "payment_types_id": 1,
-      "purchase_customer_id": 5
+      "payment_types": 1,
+      "purchase_customer": 5
 
     }
 
@@ -423,8 +423,8 @@
     "model": "BangazonAPI.order",
     "fields": {
       "order_status": "inactive",
-      "payment_types_id": 1,
-      "purchase_customer_id": 5
+      "payment_types": 1,
+      "purchase_customer": 5
 
     }
 
@@ -433,8 +433,8 @@
     "model": "BangazonAPI.order",
     "fields": {
       "order_status": "active",
-      "payment_types_id": 1,
-      "purchase_customer_id": 5
+      "payment_types": 1,
+      "purchase_customer": 5
 
     }
 
@@ -443,8 +443,8 @@
     "model": "BangazonAPI.order",
     "fields": {
       "order_status": "active",
-      "payment_types_id": 1,
-      "purchase_customer_id": 5
+      "payment_types": 1,
+      "purchase_customer": 5
 
     }
 
@@ -453,8 +453,8 @@
     "model": "BangazonAPI.order",
     "fields": {
       "order_status": "inactive",
-      "payment_types_id": 1,
-      "purchase_customer_id": 5
+      "payment_types": 1,
+      "purchase_customer": 5
 
     }
 
@@ -463,8 +463,8 @@
     "model": "BangazonAPI.order",
     "fields": {
       "order_status": "inactive",
-      "payment_types_id": 1,
-      "purchase_customer_id": 5
+      "payment_types": 1,
+      "purchase_customer": 5
 
     }
 
@@ -473,8 +473,8 @@
     "model": "BangazonAPI.order",
     "fields": {
       "order_status": "active",
-      "payment_types_id": 1,
-      "purchase_customer_id": 5
+      "payment_types": 1,
+      "purchase_customer": 5
 
     }
 
@@ -483,8 +483,8 @@
     "model": "BangazonAPI.order",
     "fields": {
       "order_status": "inactive",
-      "payment_types_id": 1,
-      "purchase_customer_id": 5
+      "payment_types": 1,
+      "purchase_customer": 5
 
     }
 
@@ -493,8 +493,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product_id": 3,
-      "order_id": 1
+      "product": 3,
+      "order": 1
 
     }
 
@@ -503,8 +503,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product_id": 2,
-      "order_id": 2
+      "product": 2,
+      "order": 2
 
     }
 
@@ -513,8 +513,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product_id": 4,
-      "order_id": 3
+      "product": 4,
+      "order": 3
 
     }
 
@@ -523,8 +523,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product_id": 5,
-      "order_id": 4
+      "product": 5,
+      "order": 4
 
     }
 
@@ -533,8 +533,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product_id": 5,
-      "order_id": 5
+      "product": 5,
+      "order": 5
 
     }
 
@@ -544,8 +544,8 @@
     "model": "BangazonAPI.orderproduct",
     "pk": 6,
     "fields": {
-      "product_id": 6,
-      "order_id": 6
+      "product": 6,
+      "order": 6
 
     }
 
@@ -554,8 +554,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product_id": 7,
-      "order_id": 7
+      "product": 7,
+      "order": 7
 
   }
 
@@ -564,8 +564,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product_id": 8,
-      "order_id": 7
+      "product": 8,
+      "order": 7
 
     }
 
@@ -574,8 +574,8 @@
   {
     "model": "BangazonAPI.orderproduct",
     "fields": {
-      "product_id": 9,
-      "order_id": 9
+      "product": 9,
+      "order": 9
 
     }
 
@@ -587,6 +587,107 @@
       "name": "Clothing, Shoes, and Jewelry",
       "expense_budget": 10000
 
+    }
+
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "How To Eat Pancakes Without Really Trying",
+      "start_date": "4-26-2017",
+      "end_date": "4-30-2017",
+      "max_capacity": "25"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "European Witchcraft and Its Place in the Modern Workplace",
+      "start_date": "4-26-2017",
+      "end_date": "4-30-2017",
+      "max_capacity": "35"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "The Oral History of the French Fry: An 11 Part Series",
+      "start_date": "4-30-2017",
+      "end_date": "4-30-2018",
+      "max_capacity": "18"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "Seven Habits of Highly Effective Eaters",
+      "start_date": "4-30-2017",
+      "end_date": "5-4-2017",
+      "max_capacity": "20"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "English As A First Language",
+      "start_date": "4-26-2017",
+      "end_date": "10-26-2017",
+      "max_capacity": "10"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "How to Grow a Pork Chop In Your Own Backyard!",
+      "start_date": "5-1-2017",
+      "end_date": "5-15-2017",
+      "max_capacity": "8"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "An Oral History of Hearing Loss",
+      "start_date": "5-20-2017",
+      "end_date": "5-26-2017",
+      "max_capacity": "150"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "When Life Gives You Lemons, Make a Milkshake: A 12 Step Program of Love",
+      "start_date": "5-22-2017",
+      "end_date": "5-31-2017",
+      "max_capacity": "10"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "How to Build a Boat, Sail Away, and Never Return: A 2 Part Series",
+      "start_date": "6-1-2017",
+      "end_date": "TBD",
+      "max_capacity": "12"
+    }
+  },
+
+  {
+    "model": "BangazonAPI.trainingcourse",
+    "fields": {
+      "course_name": "How To Bring Me Back to Life If I Should Get Bored to Death",
+      "start_date": "6-10-2017",
+      "end_date": "6-16-2017",
+      "max_capacity": "15"
     }
 
 },
@@ -606,6 +707,7 @@
     "fields": {
         "name": "Toys and Games",
         "expense_budget": 15000
+
 
   }
 },
@@ -680,6 +782,184 @@
         "expense_budget": 9000
 
   }
-}
+},
 
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Milton",
+    "last_name": "Pouncy",
+    "title": "Supervisor",
+    "department": "1"
+  }
+},
+
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Bad",
+    "last_name": "Larry",
+    "title": "Lead Developer",
+    "department": "1"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Arnie",
+    "last_name": "Pecanroll",
+    "title": "Workerbee",
+    "department": "2"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Samwise",
+    "last_name": "Ganges",
+    "title": "Workerbee",
+    "department": "3"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Fanny",
+    "last_name": "Doggonit",
+    "title": "Supervisor",
+    "department": "4"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Ashley",
+    "last_name": "Winfrey",
+    "title": "Secretary",
+    "department": "5"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Jens",
+    "last_name": "Farfignuget",
+    "title": "Coffeeguy",
+    "department": "6"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Parcheesy",
+    "last_name": "Patterpants",
+    "title": "Kittykat",
+    "department": "7"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Randy",
+    "last_name": "Maxwellhouse",
+    "title": "Supervisor",
+    "department": "8"
+  }
+},
+{
+  "model": "BangazonAPI.employee",
+  "fields": {
+    "first_name": "Winston",
+    "last_name": "Theghosbuster",
+    "title": "Supervisor",
+    "department": "9"
+  }
+},
+    {
+
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 1,
+      "training": 1
+    }
+
+  },
+
+    {
+
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 2,
+      "training": 2
+    }
+  },
+
+    {
+
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 3,
+      "training": 3
+    }
+
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 4,
+      "training": 4
+    }
+
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 5,
+      "training": 5
+    }
+
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 6,
+      "training": 6
+    }
+
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 7,
+      "training": 7
+    }
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 8,
+      "training": 8
+    }
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 9,
+      "training": 9
+    }
+  },
+
+    {
+    "model": "BangazonAPI.employeetraining",
+    "fields": {
+      "employee": 10,
+      "training": 10
+    }
+  }
 ]
