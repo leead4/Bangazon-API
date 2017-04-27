@@ -76,8 +76,8 @@ class Product(models.Model):
     title = models.CharField(max_length=25)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     description = models.CharField(max_length=100)
-    customer_id = models.ForeignKey(Customer)
-    product_type_id = models.ForeignKey(ProductType)
+    customer= models.ForeignKey(Customer)
+    product_type = models.ForeignKey(ProductType)
 
     def __str__(self):
         """
@@ -121,8 +121,8 @@ class Order(models.Model):
     """
 
     order_status = models.CharField(max_length = 25)
-    payment_types_id = models.ForeignKey(PaymentType)
-    purchase_customer_id = models.ForeignKey(Customer)
+    payment_types = models.ForeignKey(PaymentType)
+    purchase_customer = models.ForeignKey(Customer)
 
 class OrderProduct(models.Model):
     """
@@ -135,8 +135,8 @@ class OrderProduct(models.Model):
     Order_id: foreign key identifier for order in orderproduct
     Product_id: foreign key identifier for Product in orderproduct
     """ 
-    order_id = models.ForeignKey(Order)
-    product_id = models.ForeignKey(Product)
+    order = models.ForeignKey(Order)
+    product = models.ForeignKey(Product)
 
 
 class TrainingCourse(models.Model):
@@ -176,6 +176,7 @@ class Department(models.Model):
     name = models.CharField(max_length=25)
     expense_budget = models.DecimalField(max_digits=10, decimal_places=2)
 
+
 class Employee(models.Model):
     """
     This class defines a Employee in a table of employees.
@@ -192,7 +193,7 @@ class Employee(models.Model):
     first_name = models.CharField(max_length=25)
     last_name = models.CharField(max_length=25)
     title = models.CharField(max_length=25)
-    department_id = models.ForeignKey(Department)
+    department = models.ForeignKey(Department)
     
 
     def __str__(self):
