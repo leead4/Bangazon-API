@@ -5,5 +5,3 @@ bower_components
 bin
 *.DS_Store
 obj
-*.db
-*.sqlite3

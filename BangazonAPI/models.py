@@ -217,5 +217,5 @@ class EmployeeTraining(models.Model):
 
     """
 
-    employee_id: models.ForeignKey(Employee)
-    training_id: models.ForeignKey(TrainingCourse)
+    employee_id =  models.ForeignKey(Employee)
+    training_id = models.ForeignKey(TrainingCourse)
