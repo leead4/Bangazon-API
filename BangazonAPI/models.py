@@ -138,6 +138,23 @@ class OrderProduct(models.Model):
     order_id = models.ForeignKey(Order)
     product_id = models.ForeignKey(Product)
 
+class Computer(models.Model):
+    """
+    This class defines the computer class
+    Author: Angela Lee
+
+    The response will be computer details repsonse object
+
+    Keyword Methods:
+    Buy_date:
+    Decommision_date:
+    Employee_id: foreign key identifier for Employee in Employee
+
+    """
+    buy_date = models.DateField(auto_now_add=False)
+    decommission_date = models.DateField(auto_now_add=False)
+    employee_id = models.ForeignKey(Employee)
+
 
 class TrainingCourse(models.Model):
     """

@@ -9,9 +9,13 @@ router.register(r'paymenttypes', views.PaymentTypeViewSet)
 router.register(r'producttype', views.ProductTypeViewSet)
 router.register(r'order', views.OrderViewSet)
 router.register(r'orderproduct', views.OrderProductViewSet)
+<<<<<<< HEAD
 router.register(r'trainingcourse', views.TrainingCourseViewSet)
 router.register(r'department', views.DepartmentViewSet)
 router.register(r'employee', views.EmployeeViewSet)
+=======
+router.register(r'computer', views.ComputerViewSet)
+>>>>>>> adl_wed245
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
