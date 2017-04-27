@@ -1,9 +1,9 @@
 from django.db import models
 
-
 class ProductType(models.Model):
     """
     This class defines a ProductType in a table of producttypes.
+
     Author: Justin Short
 
     The response will be a producttype details response object.
@@ -12,20 +12,34 @@ class ProductType(models.Model):
     Product_type: string, the name of the product type
     Product_quantity: integer, how many of a product exists
     """
+
     product_type = models.CharField(max_length=45)
-    product_quantity = models.IntegerField(default=0) # This will be used to show amount of products in each type
+    product_quantity = models.IntegerField(default=0)
+    # This will be used to show amount of products in each type
 
     def __str__(self):
-        return "{}'s have {} amount of products".format(self.product_type, self.product_quantity)
+        """
+        Converted Product Type data object to readable string.
+
+        Author: Justin Short
+        """
+        return "{}'s have {} amount of products".format(self.product_type,
+                                                        self.product_quantity)
 
 
 def set_customer_status(customer):
+    """
+    Sets customer status object to ACTIVE.
+
+    Author: Justin Short
+    """
     customer.status = 'ACTIVE'
 
 
 class Customer(models.Model):
     """
     This class defines a Customer in a table of customers.
+
     Author: Jessica Younker
 
     The response will be a product details response object.
@@ -34,8 +48,10 @@ class Customer(models.Model):
     First_name: string, the first name of the customer
     Last_name: string, the last name of the customer
     Date_created: datetime, the date the customer's account was created
-    Date_last_active: datetime, the date the customer last accessed their account
+    Date_last_active: datetime, the date the customer last accessed their
+    account
     """
+
     first_name = models.CharField(max_length=25)
     last_name = models.CharField(max_length=25)
     date_created = models.DateField(auto_now_add=True)
@@ -47,11 +63,13 @@ class Customer(models.Model):
         (ACTIVE, "Active"),
         (INACTIVE, "Inactive")
     )
-    status = models.CharField(max_length=8, choices=STATUS_OPTIONS_CHOICES, default=ACTIVE)
+    status = models.CharField(max_length=8, choices=STATUS_OPTIONS_CHOICES,
+                              default=ACTIVE)
 
     def __str__(self):
         """
-        convert Customer object to readable string
+        Converted Customer object to readable string.
+
         Author: Jessica Younker
         """
         return "{} {}".format(self.first_name, self.last_name)
@@ -60,6 +78,7 @@ class Customer(models.Model):
 class Product(models.Model):
     """
     This class defines a Product in a table of products.
+
     Author: Helana Nosrat
 
     The response will be a product details response object.
@@ -81,13 +100,17 @@ class Product(models.Model):
     def __str__(self):
         """
         Return a string listing product fields.
+
         Interacts with admin interface.
         """
-        return "{} {}".format(self.product_title, self.product_price, self.product_description)
+        return "{} {}".format(self.product_title, self.product_price,
+                              self.product_description)
+
 
 class PaymentType(models.Model):
     """
     This class defines a Payment Type in a table of products.
+
     Author: Max Baldridge
 
     The response will be a payment type details response object.
@@ -97,6 +120,7 @@ class PaymentType(models.Model):
     Account_number: string, a string of numbers and/or letters
     Customer_id: foreign key identifier for customers in products
     """
+
     customer = models.ForeignKey(
         Customer,
         on_delete=models.CASCADE,
@@ -106,9 +130,11 @@ class PaymentType(models.Model):
     payment_type_provider = models.CharField(max_length=25)
     account_number = models.CharField(max_length=25)
 
+
 class Order(models.Model):
     """
     This class defines a Order in a table of orders.
+
     Author: Angela Lee
 
     The response will be a order details response object.
@@ -119,13 +145,16 @@ class Order(models.Model):
     Purchase_customer_id: foreign key identifier for customers in orders
     """
 
-    order_status = models.CharField(max_length = 25)
+    order_status = models.CharField(max_length=25)
     payment_types_id = models.ForeignKey(PaymentType)
     purchase_customer_id = models.ForeignKey(Customer)
 
+
 class OrderProduct(models.Model):
     """
-    This class defines a relationship between Orders and Products in a table of orderproducts.
+    This class defines a relationship between Orders and Products in a table of
+    orderproducts.
+
     Author: Angela Lee
 
     The response will be a orderproduct relationship details response object.
@@ -133,8 +162,8 @@ class OrderProduct(models.Model):
     Keyword Methods:
     Order_id: foreign key identifier for order in orderproduct
     Product_id: foreign key identifier for Product in orderproduct
-
     """
+
     order_id = models.ForeignKey(Order)
     product_id = models.ForeignKey(Product)
 
@@ -142,14 +171,15 @@ class OrderProduct(models.Model):
 class Department(models.Model):
     """
     This class defines a department in a table of multiple Departments.
+
     Author: Helana Nosrat
 
     The response will be a department detail response object.
 
     Keyword Methods:
     department_name: a string providing a department name
-    expense_budget: a string providing a departments alotted expense budget in US dollars.
-
+    expense_budget: a string providing a departments alotted expense budget in
+    US dollars.
     """
 
     name = models.CharField(max_length=25)

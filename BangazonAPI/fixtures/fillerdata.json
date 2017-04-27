@@ -667,6 +667,15 @@
 {
     "model": "BangazonAPI.department",
     "fields": {
+        "name": "Bakery",
+        "expense_budget": 19800
+
+  }
+},
+
+{
+    "model": "BangazonAPI.department",
+    "fields": {
         "name": "Pet Supplies",
         "expense_budget": 9000
 
